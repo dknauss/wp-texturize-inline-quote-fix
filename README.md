@@ -10,6 +10,23 @@ inline HTML tag.
 > - Trac: <https://core.trac.wordpress.org/ticket/18549>
 > - PR: <https://github.com/WordPress/wordpress-develop/pull/12249>
 
+## Two builds — pick one
+
+This repo ships two plugins that fix the same bug differently. **Use one, not both.**
+
+- **`wp-texturize-inline-quote-fix.php`** (default, lightweight) — *post-processes*
+  already-texturized output, flipping the mis-curled quote after an inline tag. Tiny,
+  drift-free, and rides on top of whatever core does. A couple of edge cases differ
+  slightly from the core patch.
+- **`wp-texturize-inline-quote-fix-faithful.php`** (demonstration / dogfood) —
+  *replaces* `wptexturize()` with a forked copy carrying the comprehensive #18549
+  patch, so output matches PR #12249 **byte-for-byte**, including those edge cases.
+  It forks the whole function, so it tracks a specific WordPress version (currently
+  **7.0**) — re-sync if core changes `wptexturize()`.
+
+Most sites want the lightweight post-process build. The faithful build is for
+dogfooding the exact patch on a live site, or demonstrating it for the ticket.
+
 ## What it fixes
 
 `wptexturize()` loses word context across an inline tag boundary, so a straight
@@ -55,6 +72,23 @@ closing quote/apostrophe. It mirrors the bounded core patch rather than the old
 
 Because it works on rendered output, it cannot fix content that never passes through
 these filters. The core patch (above) is the complete, in-engine fix.
+
+## The faithful build
+
+`wp-texturize-inline-quote-fix-faithful.php` re-points every filter that core
+registered `wptexturize` on to a forked `dk_wptexturize()` — WordPress 7.0's
+`wptexturize()` with the comprehensive #18549 patch applied. It reuses core's
+`_wptexturize_pushpop_element()` and `wptexturize_primes()`; only the function body
+and the two new context helpers are forked.
+
+Parity is verified against core on the same install: the #18549 fixtures produce the
+corrected output, and a corpus of ordinary text (dashes, primes, quotes, shortcodes,
+no-texturize tags) is **byte-identical** to core's `wptexturize()` — the fork changes
+nothing but the inline-tag quote decision.
+
+Because it forks the whole function it must track core: re-sync the body if core
+changes `wptexturize()`, and remove the plugin once #18549 lands. A few direct
+`wptexturize()` calls in core (not via filters) are unaffected.
 
 ## License
 
