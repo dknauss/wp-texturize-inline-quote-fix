@@ -12,6 +12,14 @@
 
 namespace DK\Texturize;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+// Core hooks and translation keys must retain their native contracts.
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+// phpcs:disable WordPress.WP.I18n.TextDomainMismatch
+
 function format( $text, $reset = false ) {
 	global $wp_cockneyreplace, $shortcode_tags;
 	static $static_characters            = null,
@@ -66,27 +74,27 @@ function format( $text, $reset = false ) {
 		$texturize_locale = $current_locale;
 
 		/* translators: Opening curly double quote. */
-		$opening_quote = \_x( '&#8220;', 'opening curly double quote' );
+		$opening_quote = \_x( '&#8220;', 'opening curly double quote', 'default' );
 		/* translators: Closing curly double quote. */
-		$closing_quote = \_x( '&#8221;', 'closing curly double quote' );
+		$closing_quote = \_x( '&#8221;', 'closing curly double quote', 'default' );
 
 		/* translators: Apostrophe, for example in 'cause or can't. */
-		$apos = \_x( '&#8217;', 'apostrophe' );
+		$apos = \_x( '&#8217;', 'apostrophe', 'default' );
 
 		/* translators: Prime, for example in 9' (nine feet). */
-		$prime = \_x( '&#8242;', 'prime' );
+		$prime = \_x( '&#8242;', 'prime', 'default' );
 		/* translators: Double prime, for example in 9" (nine inches). */
-		$double_prime = \_x( '&#8243;', 'double prime' );
+		$double_prime = \_x( '&#8243;', 'double prime', 'default' );
 
 		/* translators: Opening curly single quote. */
-		$opening_single_quote = \_x( '&#8216;', 'opening curly single quote' );
+		$opening_single_quote = \_x( '&#8216;', 'opening curly single quote', 'default' );
 		/* translators: Closing curly single quote. */
-		$closing_single_quote = \_x( '&#8217;', 'closing curly single quote' );
+		$closing_single_quote = \_x( '&#8217;', 'closing curly single quote', 'default' );
 
 		/* translators: En dash. */
-		$en_dash = \_x( '&#8211;', 'en dash' );
+		$en_dash = \_x( '&#8211;', 'en dash', 'default' );
 		/* translators: Em dash. */
-		$em_dash = \_x( '&#8212;', 'em dash' );
+		$em_dash = \_x( '&#8212;', 'em dash', 'default' );
 
 		// Recognize configured closing glyphs in their emitted and literal forms.
 		$closing_quotes = array( $apos, $closing_single_quote, $closing_quote );
@@ -114,7 +122,8 @@ function format( $text, $reset = false ) {
 				',',
 				\_x(
 					"'tain't,'twere,'twas,'tis,'twill,'til,'bout,'nuff,'round,'cause,'em",
-					'Comma-separated list of words to texturize in your language'
+					'Comma-separated list of words to texturize in your language',
+					'default'
 				)
 			);
 
@@ -122,7 +131,8 @@ function format( $text, $reset = false ) {
 				',',
 				\_x(
 					'&#8217;tain&#8217;t,&#8217;twere,&#8217;twas,&#8217;tis,&#8217;twill,&#8217;til,&#8217;bout,&#8217;nuff,&#8217;round,&#8217;cause,&#8217;em',
-					'Comma-separated list of replacement words in your language'
+					'Comma-separated list of replacement words in your language',
+					'default'
 				)
 			);
 		}

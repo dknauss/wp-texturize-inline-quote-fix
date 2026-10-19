@@ -4,7 +4,7 @@ An opt-in **feature plugin** for the core quote-context work in
 [Trac #18549](https://core.trac.wordpress.org/ticket/18549),
 [#43810](https://core.trac.wordpress.org/ticket/43810) and
 [core PR #12249](https://github.com/WordPress/wordpress-develop/pull/12249).
-Development version: **0.2.0-dev**. No tagged release or production deployment.
+Prerelease candidate: **0.2.0-beta.1**. For testing; not a stable release.
 
 ## What changes
 
@@ -16,7 +16,8 @@ without requiring explicit resets or rerunning the request-level opt-out filter.
 
 The previous English-only post-processor is removed. It could alter authored
 entities and code examples and did not match the core patch. The old faithful
-filename now loads the main plugin once; it no longer defines a competing engine.
+filename remains a labelled compatibility loader and loads the main plugin once;
+it no longer defines a competing engine.
 
 ## Install and scope
 
@@ -27,7 +28,8 @@ file. Copying or symlinking just the main file is no longer sufficient.
 
 Activation is the opt-in. No settings, database storage, cron jobs, frontend
 assets or outbound calls are added. Keel is independent and is not modified.
-Deactivate to restore native callback behavior on subsequent requests.
+Deactivate all active entries (including the legacy loader, if enabled) to restore
+native callback behavior on subsequent requests.
 
 The plugin substitutes native `wptexturize` callbacks on the documented core
 hooks at the end of `init` and `wp_loaded`. It preserves their keys, priorities,
@@ -86,3 +88,17 @@ full corpus, locale switching and paired performance measurements.
 
 GPL-2.0-or-later. WordPress-derived formatter copyright WordPress contributors;
 opening-tag reconciliation credits irozum's core PR #12645. See [LICENSE](LICENSE).
+
+## Prerelease packaging
+
+Run `python3 tests/package-contracts.py` (or `python3 tools/build-zip.py`) to create
+`dist/wp-texturize-inline-quote-fix-0.2.0-beta.1.zip` and its SHA-256 sidecar.
+The deterministic package includes nine runtime/documentation/license files and
+Composer metadata, with no installed dependencies, tests, CI or development tools.
+See [release notes](CHANGELOG.md) and the prerelease verification record in `docs/`.
+The legacy loader retains its own plugin header to preserve old active paths;
+both entries share one engine. New installations should activate the main entry.
+
+GitHub's Update URI intentionally prevents unrelated WordPress.org updates.
+Plugin Check's WordPress.org-only Update URI/name/slug findings are retained in the
+verification record; this is not a WordPress.org submission package.

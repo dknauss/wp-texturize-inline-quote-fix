@@ -21,6 +21,11 @@ foreach ($tokens as $index => $token) {
 }
 echo substr($out, 6);"""
 code = subprocess.run(['php','-r',php], input='<?php\n'+code, text=True, capture_output=True, check=True).stdout
+# These are core-owned translation keys and extension hooks, not plugin strings.
+# Explicitly retain the core domain, and narrowly document core-hook reuse.
+code = re.sub(r"(\\_x\( '[^'\n]*', '[^'\n]*') \)", r"\1, 'default' )", code)
+code = code.replace("'Comma-separated list of words to texturize in your language'", "'Comma-separated list of words to texturize in your language',\n\t\t\t\t\t'default'")
+code = code.replace("'Comma-separated list of replacement words in your language'", "'Comma-separated list of replacement words in your language',\n\t\t\t\t\t'default'")
 header='''<?php
 /**
  * Generated WordPress formatter carrying Trac #18549 / #43810.
@@ -34,6 +39,14 @@ header='''<?php
  */
 
 namespace DK\\Texturize;
+
+if ( ! defined( 'ABSPATH' ) ) {
+\texit;
+}
+
+// Core hooks and translation keys must retain their native contracts.
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+// phpcs:disable WordPress.WP.I18n.TextDomainMismatch
 
 '''%(a.revision,hashlib.sha256(a.source.read_bytes()).hexdigest())
 (Path(__file__).resolve().parent.parent/'includes/formatter.php').write_text(header+code.rstrip()+'\n')

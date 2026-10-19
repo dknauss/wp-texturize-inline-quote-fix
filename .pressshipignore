@@ -1,0 +1,12 @@
+vendor/**
+.cache/**
+.git/**
+.github/**
+dist/**
+tests/**
+tools/**
+docs/**
+composer.lock
+phpcs.xml.dist
+.gitignore
+.pressshipignore

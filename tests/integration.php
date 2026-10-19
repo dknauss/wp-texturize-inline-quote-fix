@@ -77,7 +77,7 @@ add_shortcode(
 $check( '<em>x</em>&#8216;s', trim( apply_filters( 'the_content', '[labquote]' ) ), 'Generated shortcode output' );
 remove_shortcode( 'labquote' );
 // Frozen October 17 reference outputs; expectations are not computed by the formatter.
-$fixture_path     = WP_PLUGIN_DIR . '/wp-texturize-inline-quote-fix/tests/fixtures/inline-corpus.json';
+$fixture_path     = __DIR__ . '/fixtures/inline-corpus.json';
 $corpus           = json_decode( file_get_contents( $fixture_path ), true );
 $saved_shortcodes = $GLOBALS['shortcode_tags'];
 add_shortcode( 'code', '__return_empty_string' );
