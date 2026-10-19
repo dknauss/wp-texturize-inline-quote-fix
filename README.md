@@ -1,95 +1,88 @@
 # WP Texturize Inline Quote Fix
 
-A small stopgap plugin that corrects quotes and apostrophes that WordPress's
-`wptexturize()` curls the **wrong way** when they sit immediately after a closing
-inline HTML tag.
+An opt-in **feature plugin** for the core quote-context work in
+[Trac #18549](https://core.trac.wordpress.org/ticket/18549),
+[#43810](https://core.trac.wordpress.org/ticket/43810) and
+[core PR #12249](https://github.com/WordPress/wordpress-develop/pull/12249).
+Development version: **0.2.0-dev**. No tagged release or production deployment.
 
-> **This is a workaround, not the fix.** The real fix belongs in WordPress core and
-> is proposed upstream. Remove this plugin once that lands.
->
-> - Trac: <https://core.trac.wordpress.org/ticket/18549>
-> - PR: <https://github.com/WordPress/wordpress-develop/pull/12249>
+## What changes
 
-## Two builds — pick one
+Contractions such as `<strong>He</strong>'s` and `I<strong>'ve</strong>` retain
+word context across inline markup. Quotes around inline elements close using the
+active WordPress locale's glyphs. Unicode letters and combining marks participate
+in word context. Locale entry and restoration refresh one bounded set of tables,
+without requiring explicit resets or rerunning the request-level opt-out filter.
 
-This repo ships two plugins that fix the same bug differently. **Use one, not both.**
+The previous English-only post-processor is removed. It could alter authored
+entities and code examples and did not match the core patch. The old faithful
+filename now loads the main plugin once; it no longer defines a competing engine.
 
-- **`wp-texturize-inline-quote-fix.php`** (default, lightweight) — *post-processes*
-  already-texturized output, flipping the mis-curled quote after an inline tag. Tiny,
-  drift-free, and rides on top of whatever core does. A couple of edge cases differ
-  slightly from the core patch.
-- **`wp-texturize-inline-quote-fix-faithful.php`** (demonstration / dogfood) —
-  *replaces* `wptexturize()` with a forked copy carrying the comprehensive #18549
-  patch, so output matches PR #12249 **byte-for-byte**, including those edge cases.
-  It forks the whole function, so it tracks a specific WordPress version (currently
-  **7.0**) — re-sync if core changes `wptexturize()`.
+## Install and scope
 
-Most sites want the lightweight post-process build. The faithful build is for
-dogfooding the exact patch on a live site, or demonstrating it for the ticket.
+Install the **whole directory** in `wp-content/plugins/` and activate the main
+plugin. Network activation is supported. To use it as an MU plugin, keep the
+whole directory under `mu-plugins/` and add a top-level loader requiring its main
+file. Copying or symlinking just the main file is no longer sufficient.
 
-## What it fixes
+Activation is the opt-in. No settings, database storage, cron jobs, frontend
+assets or outbound calls are added. Keel is independent and is not modified.
+Deactivate to restore native callback behavior on subsequent requests.
 
-`wptexturize()` loses word context across an inline tag boundary, so a straight
-quote right after a closing inline tag is curled as an *opening* quote:
+The plugin substitutes native `wptexturize` callbacks on the documented core
+hooks at the end of `init` and `wp_loaded`. It preserves their keys, priorities,
+argument counts and order. Removing a native callback still removes it; replacing
+one with another formatter is respected. Registrations made after `wp_loaded`
+are outside this automatic integration; callers may invoke
+`DK\Texturize\bootstrap()` after their registrations. It does not add a global
+`all` hook or format content a second time after shortcodes.
 
-| Input | Without this plugin | With this plugin |
-| --- | --- | --- |
-| `<strong>He</strong>'s here.` | `…</strong>&#8216;s` (opening — wrong) | `…</strong>&#8217;s` (apostrophe) |
-| `The word is '<a>quoted</a>'` | trailing `&#8216;` (opening — wrong) | trailing `&#8217;` (closing) |
+Covered hooks: `term_name`, `link_name`, `link_description`, `link_notes`,
+`bloginfo`, `wp_title`, `document_title`, `widget_title`, `single_post_title`,
+`single_cat_title`, `single_tag_title`, `single_month_title`, `nav_menu_attr_title`,
+`nav_menu_description`, `get_the_post_type_description`, `the_post_thumbnail_caption`,
+`list_cats`, `comment_author`, `the_title`, `the_content`, `the_excerpt`,
+`the_excerpt_embed`, `comment_text`, `term_description`, `widget_text`,
+`widget_text_content`. Feeds and REST inherit corrections through these paths.
 
-A **space** before the quote keeps normal opening-quote behaviour
-(`<strong>He</strong> 'go'` stays `&#8216;go&#8217;`), so quotations are untouched.
+**Direct calls to core `wptexturize()` stay native.** Only the upstream core patch
+can fix every direct caller. Stored content and editor typing are unchanged.
 
-## Install
+## Compatibility, languages and retirement
 
-It is designed as a **must-use plugin**. Symlink or copy the file into
-`wp-content/mu-plugins/`:
+PHP **7.4+**; released WordPress **6.4–7.1**. Other versions and prereleases fail
+unchanged. The plugin also stands down when core defines both inline-context
+helpers from the upstream correction, or a known older quote engine is present.
+`DK\Texturize\status()` reports `active`, `unsupported`, `core-fixed` or `conflict`.
+These gates are deliberately conservative; revalidate when core changes.
 
-```bash
-ln -s /path/to/wp-texturize-inline-quote-fix/wp-texturize-inline-quote-fix.php \
-      wp-content/mu-plugins/wp-texturize-inline-quote-fix.php
-```
+Glyphs come from WordPress's active locale, not a language detector. Mixed-language
+spans and `lang` attributes do not switch conventions automatically. A blog switch
+alone does not change the loaded locale: multilingual renderers must explicitly
+enter/restore their locale using WordPress APIs. The formatter then refreshes on
+its next call. Same-locale translation filters changed mid-request still need an
+explicit reset, just as custom pattern changes do.
 
-It also works as a regular plugin — drop the folder in `wp-content/plugins/` and
-activate it.
+English, German, French, Russian, Arabic and Japanese catalogs are exercised.
+That is compatibility evidence, not native-speaker review or complete linguistic
+support. Arabic/Japanese catalogs retain core curly-quote mappings. Nested-quote
+grammar, CJK punctuation conversion, bidirectional layout, feet/inches, numeric
+grouping, MathML/parser changes and disabling all punctuation are out of scope.
+Existing code/pre/kbd and shortcode exclusions remain in force.
 
-## How it works
+## Source and verification
 
-It post-processes already-texturized output (`the_content`, `the_title`,
-`the_excerpt`, `comment_text`, `term_description`, `widget_text`) at priority 12,
-flipping an opening quote that immediately follows a closing **inline** tag to a
-closing quote/apostrophe. It mirrors the bounded core patch rather than the old
-4.7-era replacement engine.
+`includes/formatter.php` is generated from the reviewed core patch and reuses
+native tokenizer/prime helpers. Its header records source revision and SHA-256.
+Regenerate with `python3 tools/sync-core.py /path/to/formatting.php --revision HASH`.
+There are no production dependencies. Qualifying global calls preserves PHP's
+builtin fast paths in the plugin namespace.
 
-## Scope and limits
+Run `composer install`, `composer lint`, and `composer lint:compat`. On a disposable
+WordPress with the plugin active and the six catalogs installed, run the real
+WordPress integration script and each guard in a fresh WP-CLI request. CI covers
+single-site/multisite at the 7.4 floor and PHP 8.4. See the verification record for
+full corpus, locale switching and paired performance measurements.
 
-- Only the inline elements `a, abbr, b, bdi, bdo, cite, data, del, dfn, em, i, ins,
-  label, mark, q, s, samp, small, span, strong, sub, sup, time, u, var`.
-- Excludes `kbd` (a core no-texturize tag) and deprecated `acronym`.
-- Excludes `]` from the trailing-context match to preserve core's "crazy" shortcode
-  texturize fixture.
-- Out of scope: quote-inside-quote behaviour (Trac #29882).
-
-Because it works on rendered output, it cannot fix content that never passes through
-these filters. The core patch (above) is the complete, in-engine fix.
-
-## The faithful build
-
-`wp-texturize-inline-quote-fix-faithful.php` re-points every filter that core
-registered `wptexturize` on to a forked `dk_wptexturize()` — WordPress 7.0's
-`wptexturize()` with the comprehensive #18549 patch applied. It reuses core's
-`_wptexturize_pushpop_element()` and `wptexturize_primes()`; only the function body
-and the two new context helpers are forked.
-
-Parity is verified against core on the same install: the #18549 fixtures produce the
-corrected output, and a corpus of ordinary text (dashes, primes, quotes, shortcodes,
-no-texturize tags) is **byte-identical** to core's `wptexturize()` — the fork changes
-nothing but the inline-tag quote decision.
-
-Because it forks the whole function it must track core: re-sync the body if core
-changes `wptexturize()`, and remove the plugin once #18549 lands. A few direct
-`wptexturize()` calls in core (not via filters) are unaffected.
-
-## License
-
-GPL-2.0-or-later. See [LICENSE](LICENSE).
+GPL-2.0-or-later. WordPress-derived formatter copyright WordPress contributors;
+opening-tag reconciliation credits irozum's core PR #12645. See [LICENSE](LICENSE).

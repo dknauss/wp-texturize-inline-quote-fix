@@ -1,0 +1,71 @@
+name: Feature plugin checks
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          tools: composer
+      - run: composer install --no-interaction --prefer-dist
+      - name: Generated formatter matches pinned core source
+        run: |
+          curl --fail --silent --show-error https://raw.githubusercontent.com/dknauss/wordpress-develop/b290bb5f1bd8dc29607571e48d7565cca68e76ed/src/wp-includes/formatting.php > /tmp/formatting.php
+          python3 tools/sync-core.py /tmp/formatting.php --revision b290bb5f1b
+          git diff --exit-code -- includes/formatter.php
+      - run: composer lint
+      - run: composer lint:compat
+  wordpress:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php: ['7.4', '8.4']
+        wordpress: ['6.4', '6.4.13', '6.5.13', '6.6.10', '6.7.10', '6.8.11', '6.9.10', '7.0.7', '7.1.3']
+    services:
+      database:
+        image: mariadb:10.11
+        env:
+          MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 'yes'
+          MARIADB_DATABASE: wordpress
+        ports: ['3306:3306']
+        options: >-
+          --health-cmd="healthcheck.sh --connect --innodb_initialized"
+          --health-interval=5s --health-timeout=5s --health-retries=20
+    steps:
+      - uses: actions/checkout@v7
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: mysqli, mbstring
+          tools: wp-cli
+      - name: Provision disposable WordPress
+        env:
+          WP_VERSION: ${{ matrix.wordpress }}
+        run: |
+          mkdir -p /tmp/quote-wordpress
+          wp core download --path=/tmp/quote-wordpress --version="$WP_VERSION"
+          wp config create --path=/tmp/quote-wordpress --dbname=wordpress --dbuser=root --dbpass='' --dbhost=127.0.0.1
+          wp core install --path=/tmp/quote-wordpress --url=http://localhost --title=Quotes --admin_user=admin --admin_email=admin@example.test --skip-email > /dev/null
+          wp language core install --path=/tmp/quote-wordpress de_DE fr_FR ru_RU ar ja
+          ln -s "$GITHUB_WORKSPACE" /tmp/quote-wordpress/wp-content/plugins/wp-texturize-inline-quote-fix
+          mkdir -p /tmp/quote-wordpress/wp-content/mu-plugins
+          cp tests/fixtures/late-registration.php /tmp/quote-wordpress/wp-content/mu-plugins/late-registration.php
+          wp plugin activate --path=/tmp/quote-wordpress wp-texturize-inline-quote-fix
+      - name: Single-site regressions and guards
+        run: |
+          wp eval-file --path=/tmp/quote-wordpress "$GITHUB_WORKSPACE/tests/integration.php"
+          for mode in retired conflict disabled; do wp eval-file --path=/tmp/quote-wordpress "$GITHUB_WORKSPACE/tests/guards.php" "$mode"; done
+      - name: Multisite regressions
+        run: |
+          wp core multisite-convert --path=/tmp/quote-wordpress --title=Quotes --base=/
+          wp plugin activate --path=/tmp/quote-wordpress wp-texturize-inline-quote-fix --network
+          wp eval-file --path=/tmp/quote-wordpress "$GITHUB_WORKSPACE/tests/integration.php"
+          wp eval-file --path=/tmp/quote-wordpress "$GITHUB_WORKSPACE/tests/multisite.php"

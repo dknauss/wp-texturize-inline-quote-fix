@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ruleset name="Inline Quote Feature Plugin">
+    <file>includes</file>
+    <file>wp-texturize-inline-quote-fix.php</file>
+    <file>wp-texturize-inline-quote-fix-faithful.php</file>
+    <rule ref="WordPress-Core"/>
+</ruleset>
