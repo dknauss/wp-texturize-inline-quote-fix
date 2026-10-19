@@ -1,0 +1,2147 @@
+{
+  "core_revision": "b290bb5f1bd8dc29607571e48d7565cca68e76ed",
+  "versions": [
+    "6.4",
+    "6.4.13",
+    "6.5.13",
+    "6.6.10",
+    "6.7.10",
+    "6.8.11",
+    "6.9.10",
+    "7.0.7",
+    "7.1.3"
+  ],
+  "environments": 108,
+  "comparison_rows": 10260,
+  "mismatches": 0,
+  "frozen_reference_mismatches": 0,
+  "catalogs": {
+    "single-6.4": {
+      "en_US": {
+        "_catalog_sha256": null,
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "de_DE": {
+        "_catalog_sha256": "f7e64f7d4ac3105a081f804df6c42c3f90b3322dc64368bc81e4c6dcfa02a059",
+        "opening curly double quote": "&#8222;",
+        "closing curly double quote": "&#8220;",
+        "opening curly single quote": "&#8218;",
+        "closing curly single quote": "&#8216;",
+        "apostrophe": "&#8217;"
+      },
+      "fr_FR": {
+        "_catalog_sha256": "2d7101e93e66d282711a06341ed4be595bd60381e519caae6490d81cb31ff43a",
+        "opening curly double quote": "« ",
+        "closing curly double quote": " »",
+        "opening curly single quote": "&lsquo;",
+        "closing curly single quote": "&rsquo;",
+        "apostrophe": "&rsquo;"
+      },
+      "ru_RU": {
+        "_catalog_sha256": "3ee1ffaf34def71be1b55f021ecc106db4ce55e40743eda72af140bd6c6edf32",
+        "opening curly double quote": "&#171;",
+        "closing curly double quote": "&#187;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ar": {
+        "_catalog_sha256": "33ec1c4653af7e56fe25f77a101f93e8bea8eb52a10a512c7ea0591fd13382f7",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ja": {
+        "_catalog_sha256": "cb5885bb27eec2adbcdec9c8dacaee5c3b9fee91fb67d6ad487850eb86bb5b76",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      }
+    },
+    "single-6.4.13": {
+      "en_US": {
+        "_catalog_sha256": null,
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "de_DE": {
+        "_catalog_sha256": "ca121890f797aa552475ac466896936e8005ccaed1fc7a03303891bb168fa8f3",
+        "opening curly double quote": "&#8222;",
+        "closing curly double quote": "&#8220;",
+        "opening curly single quote": "&#8218;",
+        "closing curly single quote": "&#8216;",
+        "apostrophe": "&#8217;"
+      },
+      "fr_FR": {
+        "_catalog_sha256": "e841f79faaf683bb98acca9d76b6d42d3cdbfcb0a0ca6b61a2df33f341cfe17f",
+        "opening curly double quote": "« ",
+        "closing curly double quote": " »",
+        "opening curly single quote": "&lsquo;",
+        "closing curly single quote": "&rsquo;",
+        "apostrophe": "&rsquo;"
+      },
+      "ru_RU": {
+        "_catalog_sha256": "45dfbb46ecf02933d7f5ced0e3fae9f21882033ec888501232fd33983f82f383",
+        "opening curly double quote": "&#171;",
+        "closing curly double quote": "&#187;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ar": {
+        "_catalog_sha256": "4ac643791b079ffe9a9d56753040fb3f7bb7a78849808fca309580b2a282add8",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ja": {
+        "_catalog_sha256": "754d079aff9587e20b5bb6f13615fa9d1cb5efa8f8340184858dad53b5ef8cc6",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      }
+    },
+    "single-6.5.13": {
+      "en_US": {
+        "_catalog_sha256": null,
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "de_DE": {
+        "_catalog_sha256": "9845b176fb9111d6dbd24efb975cbd3e3d608051925f99c59bfe5db1659de264",
+        "opening curly double quote": "&#8222;",
+        "closing curly double quote": "&#8220;",
+        "opening curly single quote": "&#8218;",
+        "closing curly single quote": "&#8216;",
+        "apostrophe": "&#8217;"
+      },
+      "fr_FR": {
+        "_catalog_sha256": "6755f7356f1ea56c08a830cf7170f6d919e29635f94271f67fa840b85e950258",
+        "opening curly double quote": "« ",
+        "closing curly double quote": " »",
+        "opening curly single quote": "&lsquo;",
+        "closing curly single quote": "&rsquo;",
+        "apostrophe": "&rsquo;"
+      },
+      "ru_RU": {
+        "_catalog_sha256": "d815e7f99d4c365e95220dea29d9f3e23857f6e5d3508916b111f8d84ed8ccff",
+        "opening curly double quote": "&#171;",
+        "closing curly double quote": "&#187;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ar": {
+        "_catalog_sha256": "4ac643791b079ffe9a9d56753040fb3f7bb7a78849808fca309580b2a282add8",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ja": {
+        "_catalog_sha256": "4d47e03e72b475191a4c3149389869d4310778548f0047e571c4be44df09b6f9",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      }
+    },
+    "single-6.6.10": {
+      "en_US": {
+        "_catalog_sha256": null,
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "de_DE": {
+        "_catalog_sha256": "1944543ea1f8a826d9c82ea73699bfb6271d800df7c262e081e2aade5c87fce9",
+        "opening curly double quote": "&#8222;",
+        "closing curly double quote": "&#8220;",
+        "opening curly single quote": "&#8218;",
+        "closing curly single quote": "&#8216;",
+        "apostrophe": "&#8217;"
+      },
+      "fr_FR": {
+        "_catalog_sha256": "a9f08a7ee9e93abc4678c24263e4d3f8def76e378295af899b6be169927fc4be",
+        "opening curly double quote": "« ",
+        "closing curly double quote": " »",
+        "opening curly single quote": "&lsquo;",
+        "closing curly single quote": "&rsquo;",
+        "apostrophe": "&rsquo;"
+      },
+      "ru_RU": {
+        "_catalog_sha256": "770458f8906c7559b0ade7af1c937c5f9b4f48a9aecf2273b57652b6f15c1e74",
+        "opening curly double quote": "&#171;",
+        "closing curly double quote": "&#187;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ar": {
+        "_catalog_sha256": "4ac643791b079ffe9a9d56753040fb3f7bb7a78849808fca309580b2a282add8",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ja": {
+        "_catalog_sha256": "369eb13c866f2c93b1ac3908de39c1b1c62826401af0643e409dcfb795ceaa01",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      }
+    },
+    "single-6.7.10": {
+      "en_US": {
+        "_catalog_sha256": null,
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "de_DE": {
+        "_catalog_sha256": "1c4379709b0774e2f802652730f09504f93c9ee6045a5dcb27dfcc80f455806e",
+        "opening curly double quote": "&#8222;",
+        "closing curly double quote": "&#8220;",
+        "opening curly single quote": "&#8218;",
+        "closing curly single quote": "&#8216;",
+        "apostrophe": "&#8217;"
+      },
+      "fr_FR": {
+        "_catalog_sha256": "c006e44f630bd1351e8d0cfe455568066dd453738d7489f545bf7a6f907b96f0",
+        "opening curly double quote": "« ",
+        "closing curly double quote": " »",
+        "opening curly single quote": "&lsquo;",
+        "closing curly single quote": "&rsquo;",
+        "apostrophe": "&rsquo;"
+      },
+      "ru_RU": {
+        "_catalog_sha256": "88cfcd8169db3263385823e2a9496808d25db90c3457229bde01dfa974aa1991",
+        "opening curly double quote": "&#171;",
+        "closing curly double quote": "&#187;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ar": {
+        "_catalog_sha256": "4ac643791b079ffe9a9d56753040fb3f7bb7a78849808fca309580b2a282add8",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ja": {
+        "_catalog_sha256": "e33ff8a000ddba07ec062b0c104b899e64445005ed938aa3a6f5d0af883fa1a7",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      }
+    },
+    "single-6.8.11": {
+      "en_US": {
+        "_catalog_sha256": null,
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "de_DE": {
+        "_catalog_sha256": "26d16518bdf04589663d11f076b25d8be471f2dec6db79dd90234b30e5b49653",
+        "opening curly double quote": "&#8222;",
+        "closing curly double quote": "&#8220;",
+        "opening curly single quote": "&#8218;",
+        "closing curly single quote": "&#8216;",
+        "apostrophe": "&#8217;"
+      },
+      "fr_FR": {
+        "_catalog_sha256": "16c3d0e5e358b2e11df1c41a6f975f395b575dd68efdc6a42ffa62dbc728f81d",
+        "opening curly double quote": "« ",
+        "closing curly double quote": " »",
+        "opening curly single quote": "&lsquo;",
+        "closing curly single quote": "&rsquo;",
+        "apostrophe": "&rsquo;"
+      },
+      "ru_RU": {
+        "_catalog_sha256": "4265f5d37ed8c0453ebad1d54cd5025fc9f3132bbb4881f23a9976daa78468be",
+        "opening curly double quote": "&#171;",
+        "closing curly double quote": "&#187;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ar": {
+        "_catalog_sha256": "4ac643791b079ffe9a9d56753040fb3f7bb7a78849808fca309580b2a282add8",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ja": {
+        "_catalog_sha256": "28aea08f9d7f347c5761763ada34fafc3cb9bdbd3be8dd6c099fdbb8bd9fc359",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      }
+    },
+    "single-6.9.10": {
+      "en_US": {
+        "_catalog_sha256": null,
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "de_DE": {
+        "_catalog_sha256": "ec7d89541b00e22dcd572347d6bf44bd3203d79302125607c7a6e11b3e5235d3",
+        "opening curly double quote": "&#8222;",
+        "closing curly double quote": "&#8220;",
+        "opening curly single quote": "&#8218;",
+        "closing curly single quote": "&#8216;",
+        "apostrophe": "&#8217;"
+      },
+      "fr_FR": {
+        "_catalog_sha256": "cd4ca468277ee2af056ca7e44387916c4c4d2f4377142272f9a038a7d5f25109",
+        "opening curly double quote": "« ",
+        "closing curly double quote": " »",
+        "opening curly single quote": "&lsquo;",
+        "closing curly single quote": "&rsquo;",
+        "apostrophe": "&rsquo;"
+      },
+      "ru_RU": {
+        "_catalog_sha256": "3adfc8d64a0df874e3375c1b3bee3b63acc871e9dc47c3f006b3ba935591be54",
+        "opening curly double quote": "&#171;",
+        "closing curly double quote": "&#187;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ar": {
+        "_catalog_sha256": "df80e1f59d06c02b8e66ee319068c5812f47b0a311e7b1fef634814821d5f359",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ja": {
+        "_catalog_sha256": "e29c4495ff6471882128c9608a7d59a0369693842dea9765cc9444ea0dba6be9",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      }
+    },
+    "single-7.0.7": {
+      "en_US": {
+        "_catalog_sha256": null,
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "de_DE": {
+        "_catalog_sha256": "d20f504d029bc4b52e89601a7a8409b4b888099099752979423ed028d7f6bb30",
+        "opening curly double quote": "&#8222;",
+        "closing curly double quote": "&#8220;",
+        "opening curly single quote": "&#8218;",
+        "closing curly single quote": "&#8216;",
+        "apostrophe": "&#8217;"
+      },
+      "fr_FR": {
+        "_catalog_sha256": "0607638339c78081b0c5a4f3d334c4b8b73734bde4d5300b6b6130bf1340f952",
+        "opening curly double quote": "« ",
+        "closing curly double quote": " »",
+        "opening curly single quote": "&lsquo;",
+        "closing curly single quote": "&rsquo;",
+        "apostrophe": "&rsquo;"
+      },
+      "ru_RU": {
+        "_catalog_sha256": "e22a337e7582c53ab2d84c1a03684cdb3a3da5c27f402b65049c51ea01572233",
+        "opening curly double quote": "&#171;",
+        "closing curly double quote": "&#187;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ar": {
+        "_catalog_sha256": "e0d39b18a25617b2484c1d372f849988482e3c452a33033c1d1396aa6d193764",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ja": {
+        "_catalog_sha256": "c51ed9d30db47607a6b721ec6379213ac0252b7d8e0dc50a6164d573261e3f69",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      }
+    },
+    "single-7.1.3": {
+      "en_US": {
+        "_catalog_sha256": null,
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "de_DE": {
+        "_catalog_sha256": "c028be6b33d1cc025340dc3e0a41df56d0650d9c8e3a8c85696a9e50cb9ee72b",
+        "opening curly double quote": "&#8222;",
+        "closing curly double quote": "&#8220;",
+        "opening curly single quote": "&#8218;",
+        "closing curly single quote": "&#8216;",
+        "apostrophe": "&#8217;"
+      },
+      "fr_FR": {
+        "_catalog_sha256": "015932c09beca5dccb69aa01d923bc634465f610bf98a9ab21ae7ad44d43719f",
+        "opening curly double quote": "« ",
+        "closing curly double quote": " »",
+        "opening curly single quote": "&lsquo;",
+        "closing curly single quote": "&rsquo;",
+        "apostrophe": "&rsquo;"
+      },
+      "ru_RU": {
+        "_catalog_sha256": "608f93586a86979f8df9d186d5cdb7c31ebf9c0dcf4e7d59517597b2639bfe43",
+        "opening curly double quote": "&#171;",
+        "closing curly double quote": "&#187;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ar": {
+        "_catalog_sha256": "6ebe9c173b1d2df10a30d53e45614dc67a2737880222f8b37352072792478dfe",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ja": {
+        "_catalog_sha256": "8592ad8b0d5dd9d9f2f341aec559b390b35f124d5cff64d59c8cd242a9c437a3",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      }
+    },
+    "multisite-6.4": {
+      "en_US": {
+        "_catalog_sha256": null,
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "de_DE": {
+        "_catalog_sha256": "f7e64f7d4ac3105a081f804df6c42c3f90b3322dc64368bc81e4c6dcfa02a059",
+        "opening curly double quote": "&#8222;",
+        "closing curly double quote": "&#8220;",
+        "opening curly single quote": "&#8218;",
+        "closing curly single quote": "&#8216;",
+        "apostrophe": "&#8217;"
+      },
+      "fr_FR": {
+        "_catalog_sha256": "2d7101e93e66d282711a06341ed4be595bd60381e519caae6490d81cb31ff43a",
+        "opening curly double quote": "« ",
+        "closing curly double quote": " »",
+        "opening curly single quote": "&lsquo;",
+        "closing curly single quote": "&rsquo;",
+        "apostrophe": "&rsquo;"
+      },
+      "ru_RU": {
+        "_catalog_sha256": "3ee1ffaf34def71be1b55f021ecc106db4ce55e40743eda72af140bd6c6edf32",
+        "opening curly double quote": "&#171;",
+        "closing curly double quote": "&#187;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ar": {
+        "_catalog_sha256": "33ec1c4653af7e56fe25f77a101f93e8bea8eb52a10a512c7ea0591fd13382f7",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ja": {
+        "_catalog_sha256": "cb5885bb27eec2adbcdec9c8dacaee5c3b9fee91fb67d6ad487850eb86bb5b76",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      }
+    },
+    "multisite-6.4.13": {
+      "en_US": {
+        "_catalog_sha256": null,
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "de_DE": {
+        "_catalog_sha256": "ca121890f797aa552475ac466896936e8005ccaed1fc7a03303891bb168fa8f3",
+        "opening curly double quote": "&#8222;",
+        "closing curly double quote": "&#8220;",
+        "opening curly single quote": "&#8218;",
+        "closing curly single quote": "&#8216;",
+        "apostrophe": "&#8217;"
+      },
+      "fr_FR": {
+        "_catalog_sha256": "e841f79faaf683bb98acca9d76b6d42d3cdbfcb0a0ca6b61a2df33f341cfe17f",
+        "opening curly double quote": "« ",
+        "closing curly double quote": " »",
+        "opening curly single quote": "&lsquo;",
+        "closing curly single quote": "&rsquo;",
+        "apostrophe": "&rsquo;"
+      },
+      "ru_RU": {
+        "_catalog_sha256": "45dfbb46ecf02933d7f5ced0e3fae9f21882033ec888501232fd33983f82f383",
+        "opening curly double quote": "&#171;",
+        "closing curly double quote": "&#187;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ar": {
+        "_catalog_sha256": "4ac643791b079ffe9a9d56753040fb3f7bb7a78849808fca309580b2a282add8",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ja": {
+        "_catalog_sha256": "754d079aff9587e20b5bb6f13615fa9d1cb5efa8f8340184858dad53b5ef8cc6",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      }
+    },
+    "multisite-6.5.13": {
+      "en_US": {
+        "_catalog_sha256": null,
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "de_DE": {
+        "_catalog_sha256": "9845b176fb9111d6dbd24efb975cbd3e3d608051925f99c59bfe5db1659de264",
+        "opening curly double quote": "&#8222;",
+        "closing curly double quote": "&#8220;",
+        "opening curly single quote": "&#8218;",
+        "closing curly single quote": "&#8216;",
+        "apostrophe": "&#8217;"
+      },
+      "fr_FR": {
+        "_catalog_sha256": "6755f7356f1ea56c08a830cf7170f6d919e29635f94271f67fa840b85e950258",
+        "opening curly double quote": "« ",
+        "closing curly double quote": " »",
+        "opening curly single quote": "&lsquo;",
+        "closing curly single quote": "&rsquo;",
+        "apostrophe": "&rsquo;"
+      },
+      "ru_RU": {
+        "_catalog_sha256": "d815e7f99d4c365e95220dea29d9f3e23857f6e5d3508916b111f8d84ed8ccff",
+        "opening curly double quote": "&#171;",
+        "closing curly double quote": "&#187;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ar": {
+        "_catalog_sha256": "4ac643791b079ffe9a9d56753040fb3f7bb7a78849808fca309580b2a282add8",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ja": {
+        "_catalog_sha256": "4d47e03e72b475191a4c3149389869d4310778548f0047e571c4be44df09b6f9",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      }
+    },
+    "multisite-6.6.10": {
+      "en_US": {
+        "_catalog_sha256": null,
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "de_DE": {
+        "_catalog_sha256": "1944543ea1f8a826d9c82ea73699bfb6271d800df7c262e081e2aade5c87fce9",
+        "opening curly double quote": "&#8222;",
+        "closing curly double quote": "&#8220;",
+        "opening curly single quote": "&#8218;",
+        "closing curly single quote": "&#8216;",
+        "apostrophe": "&#8217;"
+      },
+      "fr_FR": {
+        "_catalog_sha256": "a9f08a7ee9e93abc4678c24263e4d3f8def76e378295af899b6be169927fc4be",
+        "opening curly double quote": "« ",
+        "closing curly double quote": " »",
+        "opening curly single quote": "&lsquo;",
+        "closing curly single quote": "&rsquo;",
+        "apostrophe": "&rsquo;"
+      },
+      "ru_RU": {
+        "_catalog_sha256": "770458f8906c7559b0ade7af1c937c5f9b4f48a9aecf2273b57652b6f15c1e74",
+        "opening curly double quote": "&#171;",
+        "closing curly double quote": "&#187;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ar": {
+        "_catalog_sha256": "4ac643791b079ffe9a9d56753040fb3f7bb7a78849808fca309580b2a282add8",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ja": {
+        "_catalog_sha256": "369eb13c866f2c93b1ac3908de39c1b1c62826401af0643e409dcfb795ceaa01",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      }
+    },
+    "multisite-6.7.10": {
+      "en_US": {
+        "_catalog_sha256": null,
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "de_DE": {
+        "_catalog_sha256": "1c4379709b0774e2f802652730f09504f93c9ee6045a5dcb27dfcc80f455806e",
+        "opening curly double quote": "&#8222;",
+        "closing curly double quote": "&#8220;",
+        "opening curly single quote": "&#8218;",
+        "closing curly single quote": "&#8216;",
+        "apostrophe": "&#8217;"
+      },
+      "fr_FR": {
+        "_catalog_sha256": "c006e44f630bd1351e8d0cfe455568066dd453738d7489f545bf7a6f907b96f0",
+        "opening curly double quote": "« ",
+        "closing curly double quote": " »",
+        "opening curly single quote": "&lsquo;",
+        "closing curly single quote": "&rsquo;",
+        "apostrophe": "&rsquo;"
+      },
+      "ru_RU": {
+        "_catalog_sha256": "88cfcd8169db3263385823e2a9496808d25db90c3457229bde01dfa974aa1991",
+        "opening curly double quote": "&#171;",
+        "closing curly double quote": "&#187;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ar": {
+        "_catalog_sha256": "4ac643791b079ffe9a9d56753040fb3f7bb7a78849808fca309580b2a282add8",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ja": {
+        "_catalog_sha256": "e33ff8a000ddba07ec062b0c104b899e64445005ed938aa3a6f5d0af883fa1a7",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      }
+    },
+    "multisite-6.8.11": {
+      "en_US": {
+        "_catalog_sha256": null,
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "de_DE": {
+        "_catalog_sha256": "26d16518bdf04589663d11f076b25d8be471f2dec6db79dd90234b30e5b49653",
+        "opening curly double quote": "&#8222;",
+        "closing curly double quote": "&#8220;",
+        "opening curly single quote": "&#8218;",
+        "closing curly single quote": "&#8216;",
+        "apostrophe": "&#8217;"
+      },
+      "fr_FR": {
+        "_catalog_sha256": "16c3d0e5e358b2e11df1c41a6f975f395b575dd68efdc6a42ffa62dbc728f81d",
+        "opening curly double quote": "« ",
+        "closing curly double quote": " »",
+        "opening curly single quote": "&lsquo;",
+        "closing curly single quote": "&rsquo;",
+        "apostrophe": "&rsquo;"
+      },
+      "ru_RU": {
+        "_catalog_sha256": "4265f5d37ed8c0453ebad1d54cd5025fc9f3132bbb4881f23a9976daa78468be",
+        "opening curly double quote": "&#171;",
+        "closing curly double quote": "&#187;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ar": {
+        "_catalog_sha256": "4ac643791b079ffe9a9d56753040fb3f7bb7a78849808fca309580b2a282add8",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ja": {
+        "_catalog_sha256": "28aea08f9d7f347c5761763ada34fafc3cb9bdbd3be8dd6c099fdbb8bd9fc359",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      }
+    },
+    "multisite-6.9.10": {
+      "en_US": {
+        "_catalog_sha256": null,
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "de_DE": {
+        "_catalog_sha256": "ec7d89541b00e22dcd572347d6bf44bd3203d79302125607c7a6e11b3e5235d3",
+        "opening curly double quote": "&#8222;",
+        "closing curly double quote": "&#8220;",
+        "opening curly single quote": "&#8218;",
+        "closing curly single quote": "&#8216;",
+        "apostrophe": "&#8217;"
+      },
+      "fr_FR": {
+        "_catalog_sha256": "cd4ca468277ee2af056ca7e44387916c4c4d2f4377142272f9a038a7d5f25109",
+        "opening curly double quote": "« ",
+        "closing curly double quote": " »",
+        "opening curly single quote": "&lsquo;",
+        "closing curly single quote": "&rsquo;",
+        "apostrophe": "&rsquo;"
+      },
+      "ru_RU": {
+        "_catalog_sha256": "3adfc8d64a0df874e3375c1b3bee3b63acc871e9dc47c3f006b3ba935591be54",
+        "opening curly double quote": "&#171;",
+        "closing curly double quote": "&#187;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ar": {
+        "_catalog_sha256": "df80e1f59d06c02b8e66ee319068c5812f47b0a311e7b1fef634814821d5f359",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ja": {
+        "_catalog_sha256": "e29c4495ff6471882128c9608a7d59a0369693842dea9765cc9444ea0dba6be9",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      }
+    },
+    "multisite-7.0.7": {
+      "en_US": {
+        "_catalog_sha256": null,
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "de_DE": {
+        "_catalog_sha256": "d20f504d029bc4b52e89601a7a8409b4b888099099752979423ed028d7f6bb30",
+        "opening curly double quote": "&#8222;",
+        "closing curly double quote": "&#8220;",
+        "opening curly single quote": "&#8218;",
+        "closing curly single quote": "&#8216;",
+        "apostrophe": "&#8217;"
+      },
+      "fr_FR": {
+        "_catalog_sha256": "0607638339c78081b0c5a4f3d334c4b8b73734bde4d5300b6b6130bf1340f952",
+        "opening curly double quote": "« ",
+        "closing curly double quote": " »",
+        "opening curly single quote": "&lsquo;",
+        "closing curly single quote": "&rsquo;",
+        "apostrophe": "&rsquo;"
+      },
+      "ru_RU": {
+        "_catalog_sha256": "e22a337e7582c53ab2d84c1a03684cdb3a3da5c27f402b65049c51ea01572233",
+        "opening curly double quote": "&#171;",
+        "closing curly double quote": "&#187;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ar": {
+        "_catalog_sha256": "e0d39b18a25617b2484c1d372f849988482e3c452a33033c1d1396aa6d193764",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ja": {
+        "_catalog_sha256": "c51ed9d30db47607a6b721ec6379213ac0252b7d8e0dc50a6164d573261e3f69",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      }
+    },
+    "multisite-7.1.3": {
+      "en_US": {
+        "_catalog_sha256": null,
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "de_DE": {
+        "_catalog_sha256": "c028be6b33d1cc025340dc3e0a41df56d0650d9c8e3a8c85696a9e50cb9ee72b",
+        "opening curly double quote": "&#8222;",
+        "closing curly double quote": "&#8220;",
+        "opening curly single quote": "&#8218;",
+        "closing curly single quote": "&#8216;",
+        "apostrophe": "&#8217;"
+      },
+      "fr_FR": {
+        "_catalog_sha256": "015932c09beca5dccb69aa01d923bc634465f610bf98a9ab21ae7ad44d43719f",
+        "opening curly double quote": "« ",
+        "closing curly double quote": " »",
+        "opening curly single quote": "&lsquo;",
+        "closing curly single quote": "&rsquo;",
+        "apostrophe": "&rsquo;"
+      },
+      "ru_RU": {
+        "_catalog_sha256": "608f93586a86979f8df9d186d5cdb7c31ebf9c0dcf4e7d59517597b2639bfe43",
+        "opening curly double quote": "&#171;",
+        "closing curly double quote": "&#187;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ar": {
+        "_catalog_sha256": "6ebe9c173b1d2df10a30d53e45614dc67a2737880222f8b37352072792478dfe",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      },
+      "ja": {
+        "_catalog_sha256": "8592ad8b0d5dd9d9f2f341aec559b390b35f124d5cff64d59c8cd242a9c437a3",
+        "opening curly double quote": "&#8220;",
+        "closing curly double quote": "&#8221;",
+        "opening curly single quote": "&#8216;",
+        "closing curly single quote": "&#8217;",
+        "apostrophe": "&#8217;"
+      }
+    }
+  },
+  "benchmarks": [
+    {
+      "source": "bench-multisite-6.4.json",
+      "batch_calls": 3,
+      "warmups": 5,
+      "samples": 30,
+      "rows": [
+        {
+          "version": "6.4",
+          "mode": "multisite",
+          "locale": "en_US",
+          "name": "prose",
+          "bytes": 36000,
+          "arms": {
+            "native": {
+              "median_ms": 0.09658333333333333,
+              "p95_ms": 0.12804166666666666,
+              "peak_allocated_bytes": 55902208,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 0.09670150000000001,
+              "p95_ms": 0.10029166666666667,
+              "peak_allocated_bytes": 55902208,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 0.09765966666666667,
+              "p95_ms": 0.10315266666666667,
+              "peak_allocated_bytes": 55902208,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 0.09865283333333333,
+              "p95_ms": 0.10504166666666666,
+              "peak_allocated_bytes": 55902208,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "6.4",
+          "mode": "multisite",
+          "locale": "en_US",
+          "name": "html",
+          "bytes": 40400,
+          "arms": {
+            "native": {
+              "median_ms": 2.6601179999999998,
+              "p95_ms": 2.687486,
+              "peak_allocated_bytes": 55902208,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 4.295180666666667,
+              "p95_ms": 4.323791666666667,
+              "peak_allocated_bytes": 55902208,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 3.2184235,
+              "p95_ms": 3.2627776666666666,
+              "peak_allocated_bytes": 55902208,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 3.217263833333333,
+              "p95_ms": 3.255722,
+              "peak_allocated_bytes": 55902208,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "6.4",
+          "mode": "multisite",
+          "locale": "en_US",
+          "name": "quotes",
+          "bytes": 39500,
+          "arms": {
+            "native": {
+              "median_ms": 6.262604166666668,
+              "p95_ms": 6.314028,
+              "peak_allocated_bytes": 55902208,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 8.812618,
+              "p95_ms": 8.888361,
+              "peak_allocated_bytes": 55902208,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 7.404770666666667,
+              "p95_ms": 7.474527666666667,
+              "peak_allocated_bytes": 55902208,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 7.395847333333334,
+              "p95_ms": 7.457069333333333,
+              "peak_allocated_bytes": 55902208,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "6.4",
+          "mode": "multisite",
+          "locale": "de_DE",
+          "name": "prose",
+          "bytes": 36000,
+          "arms": {
+            "native": {
+              "median_ms": 0.08580566666666667,
+              "p95_ms": 0.08694433333333333,
+              "peak_allocated_bytes": 57999360,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 0.08614583333333332,
+              "p95_ms": 0.08697233333333333,
+              "peak_allocated_bytes": 57999360,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 0.08675,
+              "p95_ms": 0.08762500000000001,
+              "peak_allocated_bytes": 57999360,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 0.08797916666666666,
+              "p95_ms": 0.08979166666666666,
+              "peak_allocated_bytes": 57999360,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "6.4",
+          "mode": "multisite",
+          "locale": "de_DE",
+          "name": "html",
+          "bytes": 40400,
+          "arms": {
+            "native": {
+              "median_ms": 2.3943820000000002,
+              "p95_ms": 2.4251666666666667,
+              "peak_allocated_bytes": 57999360,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 4.0333749999999995,
+              "p95_ms": 4.101194333333333,
+              "peak_allocated_bytes": 57999360,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 2.946604,
+              "p95_ms": 2.9963610000000003,
+              "peak_allocated_bytes": 57999360,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 2.9607221666666668,
+              "p95_ms": 3.0096249999999998,
+              "peak_allocated_bytes": 57999360,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "6.4",
+          "mode": "multisite",
+          "locale": "de_DE",
+          "name": "quotes",
+          "bytes": 39500,
+          "arms": {
+            "native": {
+              "median_ms": 5.4118265,
+              "p95_ms": 5.484749999999999,
+              "peak_allocated_bytes": 57999360,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 7.965909666666667,
+              "p95_ms": 8.0275,
+              "peak_allocated_bytes": 57999360,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 6.573402833333333,
+              "p95_ms": 6.6270973333333325,
+              "peak_allocated_bytes": 57999360,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 6.582840166666666,
+              "p95_ms": 6.646138666666666,
+              "peak_allocated_bytes": 57999360,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "6.4",
+          "mode": "multisite",
+          "locale": "fr_FR",
+          "name": "prose",
+          "bytes": 36000,
+          "arms": {
+            "native": {
+              "median_ms": 0.09617366666666667,
+              "p95_ms": 0.09869433333333333,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 0.09625700000000001,
+              "p95_ms": 0.10018066666666665,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 0.097604,
+              "p95_ms": 0.10115266666666667,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 0.09822233333333334,
+              "p95_ms": 0.103875,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "6.4",
+          "mode": "multisite",
+          "locale": "fr_FR",
+          "name": "html",
+          "bytes": 40400,
+          "arms": {
+            "native": {
+              "median_ms": 2.665104,
+              "p95_ms": 2.6916806666666666,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 4.303527833333334,
+              "p95_ms": 4.347111333333333,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 3.2168265000000003,
+              "p95_ms": 3.2772776666666665,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 3.2168265000000003,
+              "p95_ms": 3.2532083333333333,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "6.4",
+          "mode": "multisite",
+          "locale": "fr_FR",
+          "name": "quotes",
+          "bytes": 39500,
+          "arms": {
+            "native": {
+              "median_ms": 6.285388833333333,
+              "p95_ms": 6.384028,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 8.6752015,
+              "p95_ms": 8.747680666666666,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 7.405895833333334,
+              "p95_ms": 7.486652666666667,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 7.394368,
+              "p95_ms": 7.524611,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "6.4",
+          "mode": "multisite",
+          "locale": "ru_RU",
+          "name": "prose",
+          "bytes": 36000,
+          "arms": {
+            "native": {
+              "median_ms": 0.096097,
+              "p95_ms": 0.097236,
+              "peak_allocated_bytes": 57999360,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 0.09585416666666666,
+              "p95_ms": 0.09881933333333333,
+              "peak_allocated_bytes": 57999360,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 0.0973125,
+              "p95_ms": 0.09861133333333333,
+              "peak_allocated_bytes": 57999360,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 0.09823600000000002,
+              "p95_ms": 0.10208333333333335,
+              "peak_allocated_bytes": 57999360,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "6.4",
+          "mode": "multisite",
+          "locale": "ru_RU",
+          "name": "html",
+          "bytes": 40400,
+          "arms": {
+            "native": {
+              "median_ms": 2.673208333333333,
+              "p95_ms": 2.691444333333333,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 4.3016875,
+              "p95_ms": 4.323319333333333,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 3.2194304999999996,
+              "p95_ms": 3.240903,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 3.2223331666666666,
+              "p95_ms": 3.2468610000000004,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "6.4",
+          "mode": "multisite",
+          "locale": "ru_RU",
+          "name": "quotes",
+          "bytes": 39500,
+          "arms": {
+            "native": {
+              "median_ms": 6.2752289999999995,
+              "p95_ms": 6.491597,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 8.836736166666666,
+              "p95_ms": 9.129847333333332,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 7.427618166666667,
+              "p95_ms": 7.520861,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 7.451597166666667,
+              "p95_ms": 7.713944333333333,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "6.4",
+          "mode": "multisite",
+          "locale": "ar",
+          "name": "prose",
+          "bytes": 36000,
+          "arms": {
+            "native": {
+              "median_ms": 0.09624316666666666,
+              "p95_ms": 0.09790266666666668,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 0.09627799999999999,
+              "p95_ms": 0.101111,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 0.09666666666666666,
+              "p95_ms": 0.10038866666666667,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 0.09798633333333334,
+              "p95_ms": 0.09965266666666667,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "6.4",
+          "mode": "multisite",
+          "locale": "ar",
+          "name": "html",
+          "bytes": 40400,
+          "arms": {
+            "native": {
+              "median_ms": 2.660958166666667,
+              "p95_ms": 2.6979443333333335,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 4.3040346666666665,
+              "p95_ms": 4.3501943333333335,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 3.2128958333333335,
+              "p95_ms": 3.2399166666666663,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 3.2166596666666667,
+              "p95_ms": 3.249875,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "6.4",
+          "mode": "multisite",
+          "locale": "ar",
+          "name": "quotes",
+          "bytes": 39500,
+          "arms": {
+            "native": {
+              "median_ms": 6.313618166666666,
+              "p95_ms": 6.340139,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 8.807604166666668,
+              "p95_ms": 8.891097333333333,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 7.4167361666666665,
+              "p95_ms": 7.491888666666667,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 7.409833166666667,
+              "p95_ms": 7.449763999999999,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "6.4",
+          "mode": "multisite",
+          "locale": "ja",
+          "name": "prose",
+          "bytes": 36000,
+          "arms": {
+            "native": {
+              "median_ms": 0.09902783333333334,
+              "p95_ms": 0.10019466666666667,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 0.0988195,
+              "p95_ms": 0.10390266666666666,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 0.10007650000000001,
+              "p95_ms": 0.10256966666666667,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 0.10060433333333332,
+              "p95_ms": 0.10405566666666666,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "6.4",
+          "mode": "multisite",
+          "locale": "ja",
+          "name": "html",
+          "bytes": 40400,
+          "arms": {
+            "native": {
+              "median_ms": 2.651257,
+              "p95_ms": 2.6725553333333334,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 4.274152666666667,
+              "p95_ms": 4.3336250000000005,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 3.1925901666666667,
+              "p95_ms": 3.217541666666667,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 3.1875695000000004,
+              "p95_ms": 3.2223056666666667,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "6.4",
+          "mode": "multisite",
+          "locale": "ja",
+          "name": "quotes",
+          "bytes": 39500,
+          "arms": {
+            "native": {
+              "median_ms": 6.265632,
+              "p95_ms": 6.317527666666667,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 8.786284666666667,
+              "p95_ms": 8.889597333333333,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 7.406416833333334,
+              "p95_ms": 7.485889,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 7.402687500000001,
+              "p95_ms": 7.498444666666667,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "source": "bench-multisite-7.1.3.json",
+      "batch_calls": 3,
+      "warmups": 5,
+      "samples": 30,
+      "rows": [
+        {
+          "version": "7.1.3",
+          "mode": "multisite",
+          "locale": "en_US",
+          "name": "prose",
+          "bytes": 36000,
+          "arms": {
+            "native": {
+              "median_ms": 0.09698633333333334,
+              "p95_ms": 0.10351366666666667,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 0.096889,
+              "p95_ms": 0.10216666666666667,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 0.0975,
+              "p95_ms": 0.10666666666666667,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 0.09856250000000001,
+              "p95_ms": 0.106611,
+              "peak_allocated_bytes": 60096512,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "7.1.3",
+          "mode": "multisite",
+          "locale": "en_US",
+          "name": "html",
+          "bytes": 40400,
+          "arms": {
+            "native": {
+              "median_ms": 2.708125,
+              "p95_ms": 2.7614583333333336,
+              "peak_allocated_bytes": 62193664,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 4.310284666666666,
+              "p95_ms": 4.421069666666667,
+              "peak_allocated_bytes": 62193664,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 3.2524583333333332,
+              "p95_ms": 3.35675,
+              "peak_allocated_bytes": 62193664,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 3.2537985,
+              "p95_ms": 3.2896249999999996,
+              "peak_allocated_bytes": 62193664,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "7.1.3",
+          "mode": "multisite",
+          "locale": "en_US",
+          "name": "quotes",
+          "bytes": 39500,
+          "arms": {
+            "native": {
+              "median_ms": 6.414826333333334,
+              "p95_ms": 6.557361333333334,
+              "peak_allocated_bytes": 62193664,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 8.966604166666666,
+              "p95_ms": 9.121028,
+              "peak_allocated_bytes": 62193664,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 7.551639,
+              "p95_ms": 7.665222333333333,
+              "peak_allocated_bytes": 62193664,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 7.554659666666666,
+              "p95_ms": 7.723416666666666,
+              "peak_allocated_bytes": 62193664,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "7.1.3",
+          "mode": "multisite",
+          "locale": "de_DE",
+          "name": "prose",
+          "bytes": 36000,
+          "arms": {
+            "native": {
+              "median_ms": 0.08618733333333334,
+              "p95_ms": 0.09183333333333334,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 0.08621533333333334,
+              "p95_ms": 0.09375,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 0.08720833333333333,
+              "p95_ms": 0.091389,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 0.08826383333333333,
+              "p95_ms": 0.09504166666666668,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "7.1.3",
+          "mode": "multisite",
+          "locale": "de_DE",
+          "name": "html",
+          "bytes": 40400,
+          "arms": {
+            "native": {
+              "median_ms": 2.4435276666666663,
+              "p95_ms": 2.4668193333333335,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 4.049222333333333,
+              "p95_ms": 4.1150139999999995,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 2.9829096666666666,
+              "p95_ms": 3.0223193333333334,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 2.9848263333333334,
+              "p95_ms": 3.039486333333333,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "7.1.3",
+          "mode": "multisite",
+          "locale": "de_DE",
+          "name": "quotes",
+          "bytes": 39500,
+          "arms": {
+            "native": {
+              "median_ms": 5.504215333333334,
+              "p95_ms": 5.627958333333333,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 8.069764,
+              "p95_ms": 8.375638666666667,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 6.6495415,
+              "p95_ms": 6.912166666666667,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 6.647632,
+              "p95_ms": 6.900638666666667,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "7.1.3",
+          "mode": "multisite",
+          "locale": "fr_FR",
+          "name": "prose",
+          "bytes": 36000,
+          "arms": {
+            "native": {
+              "median_ms": 0.09689600000000001,
+              "p95_ms": 0.10720833333333334,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 0.09733333333333333,
+              "p95_ms": 0.10508333333333332,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 0.09795833333333334,
+              "p95_ms": 0.11858333333333333,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 0.09847216666666667,
+              "p95_ms": 0.10552766666666667,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "7.1.3",
+          "mode": "multisite",
+          "locale": "fr_FR",
+          "name": "html",
+          "bytes": 40400,
+          "arms": {
+            "native": {
+              "median_ms": 2.732889,
+              "p95_ms": 2.8795416666666664,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 4.359576333333333,
+              "p95_ms": 5.068764,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 3.2804236666666666,
+              "p95_ms": 3.41625,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 3.2814166666666664,
+              "p95_ms": 3.438125,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "7.1.3",
+          "mode": "multisite",
+          "locale": "fr_FR",
+          "name": "quotes",
+          "bytes": 39500,
+          "arms": {
+            "native": {
+              "median_ms": 6.4584515,
+              "p95_ms": 9.080972000000001,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 8.841222333333334,
+              "p95_ms": 9.459069666666666,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 7.4904166666666665,
+              "p95_ms": 7.755972333333333,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 7.535368,
+              "p95_ms": 7.818555666666666,
+              "peak_allocated_bytes": 64290816,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "7.1.3",
+          "mode": "multisite",
+          "locale": "ru_RU",
+          "name": "prose",
+          "bytes": 36000,
+          "arms": {
+            "native": {
+              "median_ms": 0.09625,
+              "p95_ms": 0.100125,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 0.097236,
+              "p95_ms": 0.10530566666666667,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 0.09772916666666666,
+              "p95_ms": 0.11852766666666666,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 0.09847933333333334,
+              "p95_ms": 0.12243066666666667,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "7.1.3",
+          "mode": "multisite",
+          "locale": "ru_RU",
+          "name": "html",
+          "bytes": 40400,
+          "arms": {
+            "native": {
+              "median_ms": 2.708409666666667,
+              "p95_ms": 2.763055666666667,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 4.339680666666666,
+              "p95_ms": 4.420777999999999,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 3.2598195,
+              "p95_ms": 3.3122776666666667,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 3.2684861666666665,
+              "p95_ms": 3.3055,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "7.1.3",
+          "mode": "multisite",
+          "locale": "ru_RU",
+          "name": "quotes",
+          "bytes": 39500,
+          "arms": {
+            "native": {
+              "median_ms": 6.366284666666667,
+              "p95_ms": 6.457111333333334,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 8.910006833333334,
+              "p95_ms": 9.058416666666666,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 7.502347166666667,
+              "p95_ms": 7.595055666666667,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 7.539972333333333,
+              "p95_ms": 7.678583333333333,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "7.1.3",
+          "mode": "multisite",
+          "locale": "ar",
+          "name": "prose",
+          "bytes": 36000,
+          "arms": {
+            "native": {
+              "median_ms": 0.0960835,
+              "p95_ms": 0.10154166666666666,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 0.09634716666666665,
+              "p95_ms": 0.09797233333333333,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 0.09688200000000001,
+              "p95_ms": 0.100486,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 0.09800683333333333,
+              "p95_ms": 0.10152800000000001,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "7.1.3",
+          "mode": "multisite",
+          "locale": "ar",
+          "name": "html",
+          "bytes": 40400,
+          "arms": {
+            "native": {
+              "median_ms": 2.724895833333333,
+              "p95_ms": 2.7667083333333333,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 4.331868166666666,
+              "p95_ms": 4.386833333333334,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 3.246139,
+              "p95_ms": 3.286986333333333,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 3.2650208333333337,
+              "p95_ms": 3.3045833333333334,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "7.1.3",
+          "mode": "multisite",
+          "locale": "ar",
+          "name": "quotes",
+          "bytes": 39500,
+          "arms": {
+            "native": {
+              "median_ms": 6.386895833333334,
+              "p95_ms": 6.499847333333334,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 8.898993,
+              "p95_ms": 9.157569333333333,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 7.495284833333333,
+              "p95_ms": 7.636541666666666,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 7.503493166666667,
+              "p95_ms": 7.641236333333333,
+              "peak_allocated_bytes": 66387968,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "7.1.3",
+          "mode": "multisite",
+          "locale": "ja",
+          "name": "prose",
+          "bytes": 36000,
+          "arms": {
+            "native": {
+              "median_ms": 0.09883333333333333,
+              "p95_ms": 0.10230533333333335,
+              "peak_allocated_bytes": 68485120,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 0.09901383333333333,
+              "p95_ms": 0.10016666666666667,
+              "peak_allocated_bytes": 68485120,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 0.10020133333333334,
+              "p95_ms": 0.107,
+              "peak_allocated_bytes": 68485120,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 0.10112499999999999,
+              "p95_ms": 0.104736,
+              "peak_allocated_bytes": 68485120,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "7.1.3",
+          "mode": "multisite",
+          "locale": "ja",
+          "name": "html",
+          "bytes": 40400,
+          "arms": {
+            "native": {
+              "median_ms": 2.6996390000000003,
+              "p95_ms": 2.755805666666667,
+              "peak_allocated_bytes": 68485120,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 4.327895833333333,
+              "p95_ms": 4.394819333333333,
+              "peak_allocated_bytes": 68485120,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 3.2500625000000003,
+              "p95_ms": 3.322680666666667,
+              "peak_allocated_bytes": 68485120,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 3.2593056666666667,
+              "p95_ms": 3.3289026666666666,
+              "peak_allocated_bytes": 68485120,
+              "max_queries": 0
+            }
+          }
+        },
+        {
+          "version": "7.1.3",
+          "mode": "multisite",
+          "locale": "ja",
+          "name": "quotes",
+          "bytes": 39500,
+          "arms": {
+            "native": {
+              "median_ms": 6.357152666666666,
+              "p95_ms": 6.4649443333333325,
+              "peak_allocated_bytes": 68485120,
+              "max_queries": 0
+            },
+            "previous_patch": {
+              "median_ms": 8.923576333333333,
+              "p95_ms": 9.063027666666667,
+              "peak_allocated_bytes": 68485120,
+              "max_queries": 0
+            },
+            "optimized_patch": {
+              "median_ms": 7.486277833333333,
+              "p95_ms": 7.586680666666666,
+              "peak_allocated_bytes": 68485120,
+              "max_queries": 0
+            },
+            "feature_plugin": {
+              "median_ms": 7.521382000000001,
+              "p95_ms": 7.6439303333333335,
+              "peak_allocated_bytes": 68485120,
+              "max_queries": 0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "keel_cleanup_rows": 144,
+  "surface_probes": [
+    {
+      "source": "surfaces-single-7.1.3.json",
+      "rows": 18,
+      "status": 200,
+      "stored_content_unchanged": true
+    },
+    {
+      "source": "surfaces-multisite-7.1.3.json",
+      "rows": 18,
+      "status": 200,
+      "stored_content_unchanged": true
+    },
+    {
+      "source": "surfaces-multisite-6.4.json",
+      "rows": 18,
+      "status": 200,
+      "stored_content_unchanged": true
+    }
+  ]
+}

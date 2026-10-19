@@ -1,0 +1,566 @@
+[
+  {
+    "name": "closing_apostrophe",
+    "input": "<strong>He</strong>'s here.",
+    "expected": {
+      "en_US": "<strong>He</strong>&#8217;s here.",
+      "de_DE": "<strong>He</strong>&#8217;s here.",
+      "fr_FR": "<strong>He</strong>&rsquo;s here.",
+      "ru_RU": "<strong>He</strong>&#8217;s here.",
+      "ar": "<strong>He</strong>&#8217;s here.",
+      "ja": "<strong>He</strong>&#8217;s here."
+    }
+  },
+  {
+    "name": "opening_apostrophe",
+    "input": "I<strong>'ve been</strong>",
+    "expected": {
+      "en_US": "I<strong>&#8217;ve been</strong>",
+      "de_DE": "I<strong>&#8217;ve been</strong>",
+      "fr_FR": "I<strong>&rsquo;ve been</strong>",
+      "ru_RU": "I<strong>&#8217;ve been</strong>",
+      "ar": "I<strong>&#8217;ve been</strong>",
+      "ja": "I<strong>&#8217;ve been</strong>"
+    }
+  },
+  {
+    "name": "unicode_opening",
+    "input": "café<em>'s</em>",
+    "expected": {
+      "en_US": "café<em>&#8217;s</em>",
+      "de_DE": "café<em>&#8217;s</em>",
+      "fr_FR": "café<em>&rsquo;s</em>",
+      "ru_RU": "café<em>&#8217;s</em>",
+      "ar": "café<em>&#8217;s</em>",
+      "ja": "café<em>&#8217;s</em>"
+    }
+  },
+  {
+    "name": "combining_opening",
+    "input": "café<em>'s</em>",
+    "expected": {
+      "en_US": "café<em>&#8217;s</em>",
+      "de_DE": "café<em>&#8217;s</em>",
+      "fr_FR": "café<em>&rsquo;s</em>",
+      "ru_RU": "café<em>&#8217;s</em>",
+      "ar": "café<em>&#8217;s</em>",
+      "ja": "café<em>&#8217;s</em>"
+    }
+  },
+  {
+    "name": "uppercase_opening",
+    "input": "I<STRONG>'ve</STRONG>",
+    "expected": {
+      "en_US": "I<STRONG>&#8217;ve</STRONG>",
+      "de_DE": "I<STRONG>&#8217;ve</STRONG>",
+      "fr_FR": "I<STRONG>&rsquo;ve</STRONG>",
+      "ru_RU": "I<STRONG>&#8217;ve</STRONG>",
+      "ar": "I<STRONG>&#8217;ve</STRONG>",
+      "ja": "I<STRONG>&#8217;ve</STRONG>"
+    }
+  },
+  {
+    "name": "tab_opening",
+    "input": "I<strong\tclass=\"x\">'ve</strong>",
+    "expected": {
+      "en_US": "I<strong\tclass=\"x\">&#8217;ve</strong>",
+      "de_DE": "I<strong\tclass=\"x\">&#8217;ve</strong>",
+      "fr_FR": "I<strong\tclass=\"x\">&rsquo;ve</strong>",
+      "ru_RU": "I<strong\tclass=\"x\">&#8217;ve</strong>",
+      "ar": "I<strong\tclass=\"x\">&#8217;ve</strong>",
+      "ja": "I<strong\tclass=\"x\">&#8217;ve</strong>"
+    }
+  },
+  {
+    "name": "newline_opening",
+    "input": "I<em\nclass=\"x\">'ve</em>",
+    "expected": {
+      "en_US": "I<em\nclass=\"x\">&#8217;ve</em>",
+      "de_DE": "I<em\nclass=\"x\">&#8217;ve</em>",
+      "fr_FR": "I<em\nclass=\"x\">&rsquo;ve</em>",
+      "ru_RU": "I<em\nclass=\"x\">&#8217;ve</em>",
+      "ar": "I<em\nclass=\"x\">&#8217;ve</em>",
+      "ja": "I<em\nclass=\"x\">&#8217;ve</em>"
+    }
+  },
+  {
+    "name": "uppercase_closing",
+    "input": "<STRONG>He</STRONG>'s",
+    "expected": {
+      "en_US": "<STRONG>He</STRONG>&#8217;s",
+      "de_DE": "<STRONG>He</STRONG>&#8217;s",
+      "fr_FR": "<STRONG>He</STRONG>&rsquo;s",
+      "ru_RU": "<STRONG>He</STRONG>&#8217;s",
+      "ar": "<STRONG>He</STRONG>&#8217;s",
+      "ja": "<STRONG>He</STRONG>&#8217;s"
+    }
+  },
+  {
+    "name": "whitespace_closing",
+    "input": "<strong>He</strong >'s",
+    "expected": {
+      "en_US": "<strong>He</strong >&#8217;s",
+      "de_DE": "<strong>He</strong >&#8217;s",
+      "fr_FR": "<strong>He</strong >&rsquo;s",
+      "ru_RU": "<strong>He</strong >&#8217;s",
+      "ar": "<strong>He</strong >&#8217;s",
+      "ja": "<strong>He</strong >&#8217;s"
+    }
+  },
+  {
+    "name": "nested_closing",
+    "input": "<em><strong>He</strong></em>'s",
+    "expected": {
+      "en_US": "<em><strong>He</strong></em>&#8217;s",
+      "de_DE": "<em><strong>He</strong></em>&#8217;s",
+      "fr_FR": "<em><strong>He</strong></em>&rsquo;s",
+      "ru_RU": "<em><strong>He</strong></em>&#8217;s",
+      "ar": "<em><strong>He</strong></em>&#8217;s",
+      "ja": "<em><strong>He</strong></em>&#8217;s"
+    }
+  },
+  {
+    "name": "nested_opening",
+    "input": "I<em><strong>'ve</strong></em>",
+    "expected": {
+      "en_US": "I<em><strong>&#8217;ve</strong></em>",
+      "de_DE": "I<em><strong>&#8217;ve</strong></em>",
+      "fr_FR": "I<em><strong>&rsquo;ve</strong></em>",
+      "ru_RU": "I<em><strong>&#8217;ve</strong></em>",
+      "ar": "I<em><strong>&#8217;ve</strong></em>",
+      "ja": "I<em><strong>&#8217;ve</strong></em>"
+    }
+  },
+  {
+    "name": "quoted_name",
+    "input": "<em>\"John\"</em>'s book.",
+    "expected": {
+      "en_US": "<em>&#8220;John&#8221;</em>&#8217;s book.",
+      "de_DE": "<em>&#8222;John&#8220;</em>&#8217;s book.",
+      "fr_FR": "<em>« John »</em>&rsquo;s book.",
+      "ru_RU": "<em>&#171;John&#187;</em>&#8217;s book.",
+      "ar": "<em>&#8220;John&#8221;</em>&#8217;s book.",
+      "ja": "<em>&#8220;John&#8221;</em>&#8217;s book."
+    }
+  },
+  {
+    "name": "closing_double",
+    "input": "\"<em>John</em>\"",
+    "expected": {
+      "en_US": "&#8220;<em>John</em>&#8221;",
+      "de_DE": "&#8222;<em>John</em>&#8220;",
+      "fr_FR": "« <em>John</em> »",
+      "ru_RU": "&#171;<em>John</em>&#187;",
+      "ar": "&#8220;<em>John</em>&#8221;",
+      "ja": "&#8220;<em>John</em>&#8221;"
+    }
+  },
+  {
+    "name": "closing_single",
+    "input": "'<em>John</em>'",
+    "expected": {
+      "en_US": "&#8216;<em>John</em>&#8217;",
+      "de_DE": "&#8218;<em>John</em>&#8216;",
+      "fr_FR": "&lsquo;<em>John</em>&rsquo;",
+      "ru_RU": "&#8216;<em>John</em>&#8217;",
+      "ar": "&#8216;<em>John</em>&#8217;",
+      "ja": "&#8216;<em>John</em>&#8217;"
+    }
+  },
+  {
+    "name": "plural_possessive",
+    "input": "<em>James</em>' book",
+    "expected": {
+      "en_US": "<em>James</em>&#8217; book",
+      "de_DE": "<em>James</em>&#8217; book",
+      "fr_FR": "<em>James</em>&rsquo; book",
+      "ru_RU": "<em>James</em>&#8217; book",
+      "ar": "<em>James</em>&#8217; book",
+      "ja": "<em>James</em>&#8217; book"
+    }
+  },
+  {
+    "name": "contraction_in_quote",
+    "input": "'He<em>'s</em> here'",
+    "expected": {
+      "en_US": "&#8216;He<em>&#8217;s</em> here&#8217;",
+      "de_DE": "&#8218;He<em>&#8217;s</em> here&#8216;",
+      "fr_FR": "&lsquo;He<em>&rsquo;s</em> here&rsquo;",
+      "ru_RU": "&#8216;He<em>&#8217;s</em> here&#8217;",
+      "ar": "&#8216;He<em>&#8217;s</em> here&#8217;",
+      "ja": "&#8216;He<em>&#8217;s</em> here&#8217;"
+    }
+  },
+  {
+    "name": "earlier_contraction",
+    "input": "'Don't <em>go</em>'",
+    "expected": {
+      "en_US": "&#8216;Don&#8217;t <em>go</em>&#8217;",
+      "de_DE": "&#8218;Don&#8217;t <em>go</em>&#8216;",
+      "fr_FR": "&lsquo;Don&rsquo;t <em>go</em>&rsquo;",
+      "ru_RU": "&#8216;Don&#8217;t <em>go</em>&#8217;",
+      "ar": "&#8216;Don&#8217;t <em>go</em>&#8217;",
+      "ja": "&#8216;Don&#8217;t <em>go</em>&#8217;"
+    }
+  },
+  {
+    "name": "ordinary_quotes",
+    "input": "word <em>'Hello'</em>",
+    "expected": {
+      "en_US": "word <em>&#8216;Hello&#8217;</em>",
+      "de_DE": "word <em>&#8218;Hello&#8216;</em>",
+      "fr_FR": "word <em>&lsquo;Hello&rsquo;</em>",
+      "ru_RU": "word <em>&#8216;Hello&#8217;</em>",
+      "ar": "word <em>&#8216;Hello&#8217;</em>",
+      "ja": "word <em>&#8216;Hello&#8217;</em>"
+    }
+  },
+  {
+    "name": "no_word_empty",
+    "input": "<em></em>'Hello'",
+    "expected": {
+      "en_US": "<em></em>&#8216;Hello&#8217;",
+      "de_DE": "<em></em>&#8218;Hello&#8216;",
+      "fr_FR": "<em></em>&lsquo;Hello&rsquo;",
+      "ru_RU": "<em></em>&#8216;Hello&#8217;",
+      "ar": "<em></em>&#8216;Hello&#8217;",
+      "ja": "<em></em>&#8216;Hello&#8217;"
+    }
+  },
+  {
+    "name": "no_word_punctuation",
+    "input": "<em>:</em>'Hello'",
+    "expected": {
+      "en_US": "<em>:</em>&#8216;Hello&#8217;",
+      "de_DE": "<em>:</em>&#8218;Hello&#8216;",
+      "fr_FR": "<em>:</em>&lsquo;Hello&rsquo;",
+      "ru_RU": "<em>:</em>&#8216;Hello&#8217;",
+      "ar": "<em>:</em>&#8216;Hello&#8217;",
+      "ja": "<em>:</em>&#8216;Hello&#8217;"
+    }
+  },
+  {
+    "name": "space_before_quote",
+    "input": "<strong>He</strong> 'go'",
+    "expected": {
+      "en_US": "<strong>He</strong> &#8216;go&#8217;",
+      "de_DE": "<strong>He</strong> &#8218;go&#8216;",
+      "fr_FR": "<strong>He</strong> &lsquo;go&rsquo;",
+      "ru_RU": "<strong>He</strong> &#8216;go&#8217;",
+      "ar": "<strong>He</strong> &#8216;go&#8217;",
+      "ja": "<strong>He</strong> &#8216;go&#8217;"
+    }
+  },
+  {
+    "name": "block_boundary",
+    "input": "word<div><em>'Hello'</em></div>",
+    "expected": {
+      "en_US": "word<div><em>&#8216;Hello&#8217;</em></div>",
+      "de_DE": "word<div><em>&#8218;Hello&#8216;</em></div>",
+      "fr_FR": "word<div><em>&lsquo;Hello&rsquo;</em></div>",
+      "ru_RU": "word<div><em>&#8216;Hello&#8217;</em></div>",
+      "ar": "word<div><em>&#8216;Hello&#8217;</em></div>",
+      "ja": "word<div><em>&#8216;Hello&#8217;</em></div>"
+    }
+  },
+  {
+    "name": "comment_boundary",
+    "input": "word<!-- gap --><em>'Hello'</em>",
+    "expected": {
+      "en_US": "word<!-- gap --><em>&#8216;Hello&#8217;</em>",
+      "de_DE": "word<!-- gap --><em>&#8218;Hello&#8216;</em>",
+      "fr_FR": "word<!-- gap --><em>&lsquo;Hello&rsquo;</em>",
+      "ru_RU": "word<!-- gap --><em>&#8216;Hello&#8217;</em>",
+      "ar": "word<!-- gap --><em>&#8216;Hello&#8217;</em>",
+      "ja": "word<!-- gap --><em>&#8216;Hello&#8217;</em>"
+    }
+  },
+  {
+    "name": "whitespace_boundary",
+    "input": "word<em> </em><strong>'Hello'</strong>",
+    "expected": {
+      "en_US": "word<em> </em><strong>&#8216;Hello&#8217;</strong>",
+      "de_DE": "word<em> </em><strong>&#8218;Hello&#8216;</strong>",
+      "fr_FR": "word<em> </em><strong>&lsquo;Hello&rsquo;</strong>",
+      "ru_RU": "word<em> </em><strong>&#8216;Hello&#8217;</strong>",
+      "ar": "word<em> </em><strong>&#8216;Hello&#8217;</strong>",
+      "ja": "word<em> </em><strong>&#8216;Hello&#8217;</strong>"
+    }
+  },
+  {
+    "name": "self_closing",
+    "input": "word<span/><em>'Hello'</em>",
+    "expected": {
+      "en_US": "word<span/><em>&#8216;Hello&#8217;</em>",
+      "de_DE": "word<span/><em>&#8218;Hello&#8216;</em>",
+      "fr_FR": "word<span/><em>&lsquo;Hello&rsquo;</em>",
+      "ru_RU": "word<span/><em>&#8216;Hello&#8217;</em>",
+      "ar": "word<span/><em>&#8216;Hello&#8217;</em>",
+      "ja": "word<span/><em>&#8216;Hello&#8217;</em>"
+    }
+  },
+  {
+    "name": "opaque_literal_entity",
+    "input": "<code><em>x</em>&#8216;s</code>",
+    "expected": {
+      "en_US": "<code><em>x</em>&#8216;s</code>",
+      "de_DE": "<code><em>x</em>&#8216;s</code>",
+      "fr_FR": "<code><em>x</em>&#8216;s</code>",
+      "ru_RU": "<code><em>x</em>&#8216;s</code>",
+      "ar": "<code><em>x</em>&#8216;s</code>",
+      "ja": "<code><em>x</em>&#8216;s</code>"
+    }
+  },
+  {
+    "name": "opaque_ascii",
+    "input": "<code><em>x</em>'s -- ...</code>",
+    "expected": {
+      "en_US": "<code><em>x</em>'s -- ...</code>",
+      "de_DE": "<code><em>x</em>'s -- ...</code>",
+      "fr_FR": "<code><em>x</em>'s -- ...</code>",
+      "ru_RU": "<code><em>x</em>'s -- ...</code>",
+      "ar": "<code><em>x</em>'s -- ...</code>",
+      "ja": "<code><em>x</em>'s -- ...</code>"
+    }
+  },
+  {
+    "name": "opaque_pre",
+    "input": "<pre><em>x</em>'s</pre>",
+    "expected": {
+      "en_US": "<pre><em>x</em>'s</pre>",
+      "de_DE": "<pre><em>x</em>'s</pre>",
+      "fr_FR": "<pre><em>x</em>'s</pre>",
+      "ru_RU": "<pre><em>x</em>'s</pre>",
+      "ar": "<pre><em>x</em>'s</pre>",
+      "ja": "<pre><em>x</em>'s</pre>"
+    }
+  },
+  {
+    "name": "opaque_kbd",
+    "input": "<kbd><em>x</em>'s</kbd>",
+    "expected": {
+      "en_US": "<kbd><em>x</em>'s</kbd>",
+      "de_DE": "<kbd><em>x</em>'s</kbd>",
+      "fr_FR": "<kbd><em>x</em>'s</kbd>",
+      "ru_RU": "<kbd><em>x</em>'s</kbd>",
+      "ar": "<kbd><em>x</em>'s</kbd>",
+      "ja": "<kbd><em>x</em>'s</kbd>"
+    }
+  },
+  {
+    "name": "opaque_script",
+    "input": "<script>var s = \"<em>x</em>&#8216;s\";</script>",
+    "expected": {
+      "en_US": "<script>var s = \"<em>x</em>&#8216;s\";</script>",
+      "de_DE": "<script>var s = \"<em>x</em>&#8216;s\";</script>",
+      "fr_FR": "<script>var s = \"<em>x</em>&#8216;s\";</script>",
+      "ru_RU": "<script>var s = \"<em>x</em>&#8216;s\";</script>",
+      "ar": "<script>var s = \"<em>x</em>&#8216;s\";</script>",
+      "ja": "<script>var s = \"<em>x</em>&#8216;s\";</script>"
+    }
+  },
+  {
+    "name": "script_prose",
+    "input": "<script>if(a<b)window&&document</script>It's -- fine.",
+    "expected": {
+      "en_US": "<script>if(a<b)window&#038;&#038;document</script>It's -- fine.",
+      "de_DE": "<script>if(a<b)window&#038;&#038;document</script>It's -- fine.",
+      "fr_FR": "<script>if(a<b)window&#038;&#038;document</script>It's -- fine.",
+      "ru_RU": "<script>if(a<b)window&#038;&#038;document</script>It's -- fine.",
+      "ar": "<script>if(a<b)window&#038;&#038;document</script>It's -- fine.",
+      "ja": "<script>if(a<b)window&#038;&#038;document</script>It's -- fine."
+    }
+  },
+  {
+    "name": "math",
+    "input": "<math><annotation encoding=\"application/x-tex\">f'(x) - 1</annotation></math>",
+    "expected": {
+      "en_US": "<math><annotation encoding=\"application/x-tex\">f'(x) &#8211; 1</annotation></math>",
+      "de_DE": "<math><annotation encoding=\"application/x-tex\">f'(x) &#8211; 1</annotation></math>",
+      "fr_FR": "<math><annotation encoding=\"application/x-tex\">f'(x) &#8211; 1</annotation></math>",
+      "ru_RU": "<math><annotation encoding=\"application/x-tex\">f'(x) &#8212; 1</annotation></math>",
+      "ar": "<math><annotation encoding=\"application/x-tex\">f'(x) &#8211; 1</annotation></math>",
+      "ja": "<math><annotation encoding=\"application/x-tex\">f'(x) &#8211; 1</annotation></math>"
+    }
+  },
+  {
+    "name": "mark",
+    "input": "<mark>He's -- here ...</mark>",
+    "expected": {
+      "en_US": "<mark>He&#8217;s &#8212; here &#8230;</mark>",
+      "de_DE": "<mark>He&#8217;s &#8212; here &#8230;</mark>",
+      "fr_FR": "<mark>He&rsquo;s &#8212; here &#8230;</mark>",
+      "ru_RU": "<mark>He&#8217;s &#8212; here &#8230;</mark>",
+      "ar": "<mark>He&#8217;s &#8212; here &#8230;</mark>",
+      "ja": "<mark>He&#8217;s &#8212; here &#8230;</mark>"
+    }
+  },
+  {
+    "name": "feet",
+    "input": "5'6\"",
+    "expected": {
+      "en_US": "5&#8217;6&#8243;",
+      "de_DE": "5&#8217;6&#8243;",
+      "fr_FR": "5&rsquo;6&Prime;",
+      "ru_RU": "5&#8217;6&#8243;",
+      "ar": "5&#8217;6&#8243;",
+      "ja": "5&#8217;6&#8243;"
+    }
+  },
+  {
+    "name": "numeric_grouping",
+    "input": "10'000",
+    "expected": {
+      "en_US": "10&#8217;000",
+      "de_DE": "10&#8217;000",
+      "fr_FR": "10&rsquo;000",
+      "ru_RU": "10&#8217;000",
+      "ar": "10&#8217;000",
+      "ja": "10&#8217;000"
+    }
+  },
+  {
+    "name": "quoted_number",
+    "input": "'7'",
+    "expected": {
+      "en_US": "&#8216;7&#8217;",
+      "de_DE": "&#8218;7&#8216;",
+      "fr_FR": "&lsquo;7&rsquo;",
+      "ru_RU": "&#8216;7&#8217;",
+      "ar": "&#8216;7&#8217;",
+      "ja": "&#8216;7&#8217;"
+    }
+  },
+  {
+    "name": "dash",
+    "input": "A -- B; A--B; A - B; A --- B",
+    "expected": {
+      "en_US": "A &#8212; B; A&#8211;B; A &#8211; B; A &#8212; B",
+      "de_DE": "A &#8212; B; A&#8211;B; A &#8211; B; A &#8212; B",
+      "fr_FR": "A &#8212; B; A&#8211;B; A &#8211; B; A &#8212; B",
+      "ru_RU": "A &#8212; B; A&#8212;B; A &#8212; B; A &#8212; B",
+      "ar": "A &#8212; B; A&#8211;B; A &#8211; B; A &#8212; B",
+      "ja": "A &#8212; B; A&#8211;B; A &#8211; B; A &#8212; B"
+    }
+  },
+  {
+    "name": "ordinary",
+    "input": "It's a 'test' ... -- (tm) 3x3.",
+    "expected": {
+      "en_US": "It&#8217;s a &#8216;test&#8217; &#8230; &#8212; &#8482; 3&#215;3.",
+      "de_DE": "It&#8217;s a &#8218;test&#8216; &#8230; &#8212; &#8482; 3&#215;3.",
+      "fr_FR": "It&rsquo;s a &lsquo;test&rsquo; &#8230; &#8212; &#8482; 3&#215;3.",
+      "ru_RU": "It&#8217;s a &#8216;test&#8217; &#8230; &#8212; &#8482; 3&#215;3.",
+      "ar": "It&#8217;s a &#8216;test&#8217; &#8230; &#8212; &#8482; 3&#215;3.",
+      "ja": "It&#8217;s a &#8216;test&#8217; &#8230; &#8212; &#8482; 3&#215;3."
+    }
+  },
+  {
+    "name": "french_word",
+    "input": "l<em>'ami</em>",
+    "expected": {
+      "en_US": "l<em>&#8217;ami</em>",
+      "de_DE": "l<em>&#8217;ami</em>",
+      "fr_FR": "l<em>&rsquo;ami</em>",
+      "ru_RU": "l<em>&#8217;ami</em>",
+      "ar": "l<em>&#8217;ami</em>",
+      "ja": "l<em>&#8217;ami</em>"
+    }
+  },
+  {
+    "name": "cyrillic_word",
+    "input": "<em>слово</em>'s",
+    "expected": {
+      "en_US": "<em>слово</em>&#8217;s",
+      "de_DE": "<em>слово</em>&#8217;s",
+      "fr_FR": "<em>слово</em>&rsquo;s",
+      "ru_RU": "<em>слово</em>&#8217;s",
+      "ar": "<em>слово</em>&#8217;s",
+      "ja": "<em>слово</em>&#8217;s"
+    }
+  },
+  {
+    "name": "arabic_word",
+    "input": "<em>كتاب</em>'s",
+    "expected": {
+      "en_US": "<em>كتاب</em>&#8217;s",
+      "de_DE": "<em>كتاب</em>&#8217;s",
+      "fr_FR": "<em>كتاب</em>&rsquo;s",
+      "ru_RU": "<em>كتاب</em>&#8217;s",
+      "ar": "<em>كتاب</em>&#8217;s",
+      "ja": "<em>كتاب</em>&#8217;s"
+    }
+  },
+  {
+    "name": "japanese_word",
+    "input": "<em>日本語</em>'s",
+    "expected": {
+      "en_US": "<em>日本語</em>&#8217;s",
+      "de_DE": "<em>日本語</em>&#8217;s",
+      "fr_FR": "<em>日本語</em>&rsquo;s",
+      "ru_RU": "<em>日本語</em>&#8217;s",
+      "ar": "<em>日本語</em>&#8217;s",
+      "ja": "<em>日本語</em>&#8217;s"
+    }
+  },
+  {
+    "name": "authored_opening_entity",
+    "input": "<em>x</em>&#8216;Hello&#8217;",
+    "expected": {
+      "en_US": "<em>x</em>&#8216;Hello&#8217;",
+      "de_DE": "<em>x</em>&#8216;Hello&#8217;",
+      "fr_FR": "<em>x</em>&#8216;Hello&#8217;",
+      "ru_RU": "<em>x</em>&#8216;Hello&#8217;",
+      "ar": "<em>x</em>&#8216;Hello&#8217;",
+      "ja": "<em>x</em>&#8216;Hello&#8217;"
+    }
+  },
+  {
+    "name": "authored_double_entity",
+    "input": "<em>x</em>&#8220;Hello&#8221;",
+    "expected": {
+      "en_US": "<em>x</em>&#8220;Hello&#8221;",
+      "de_DE": "<em>x</em>&#8220;Hello&#8221;",
+      "fr_FR": "<em>x</em>&#8220;Hello&#8221;",
+      "ru_RU": "<em>x</em>&#8220;Hello&#8221;",
+      "ar": "<em>x</em>&#8220;Hello&#8221;",
+      "ja": "<em>x</em>&#8220;Hello&#8221;"
+    }
+  },
+  {
+    "name": "code_shortcode",
+    "input": "[code]<em>x</em>'s[/code]",
+    "expected": {
+      "en_US": "[code]<em>x</em>'s[/code]",
+      "de_DE": "[code]<em>x</em>'s[/code]",
+      "fr_FR": "[code]<em>x</em>'s[/code]",
+      "ru_RU": "[code]<em>x</em>'s[/code]",
+      "ar": "[code]<em>x</em>'s[/code]",
+      "ja": "[code]<em>x</em>'s[/code]"
+    }
+  },
+  {
+    "name": "generated_shortcode",
+    "input": "[labquote]",
+    "expected": {
+      "en_US": "[labquote]",
+      "de_DE": "[labquote]",
+      "fr_FR": "[labquote]",
+      "ru_RU": "[labquote]",
+      "ar": "[labquote]",
+      "ja": "[labquote]"
+    }
+  },
+  {
+    "name": "escaped_shortcode",
+    "input": "word[[code]]<em>'Hello'</em>",
+    "expected": {
+      "en_US": "word[[code]]<em>&#8216;Hello&#8217;</em>",
+      "de_DE": "word[[code]]<em>&#8218;Hello&#8216;</em>",
+      "fr_FR": "word[[code]]<em>&lsquo;Hello&rsquo;</em>",
+      "ru_RU": "word[[code]]<em>&#8216;Hello&#8217;</em>",
+      "ar": "word[[code]]<em>&#8216;Hello&#8217;</em>",
+      "ja": "word[[code]]<em>&#8216;Hello&#8217;</em>"
+    }
+  }
+]

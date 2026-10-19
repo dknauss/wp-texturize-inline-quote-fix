@@ -76,4 +76,19 @@ add_shortcode(
 );
 $check( '<em>x</em>&#8216;s', trim( apply_filters( 'the_content', '[labquote]' ) ), 'Generated shortcode output' );
 remove_shortcode( 'labquote' );
+// Frozen October 17 reference outputs; expectations are not computed by the formatter.
+$fixture_path     = WP_PLUGIN_DIR . '/wp-texturize-inline-quote-fix/tests/fixtures/inline-corpus.json';
+$corpus           = json_decode( file_get_contents( $fixture_path ), true );
+$saved_shortcodes = $GLOBALS['shortcode_tags'];
+add_shortcode( 'code', '__return_empty_string' );
+add_shortcode( 'labquote', '__return_empty_string' );
+foreach ( array_keys( $locale_cases ) as $locale ) {
+	$switched = switch_to_locale( $locale );
+	foreach ( $corpus as $case ) {
+		$check( $case['expected'][ $locale ], DK\Texturize\render( $case['input'] ), 'Frozen corpus: ' . $locale . '/' . $case['name'] );
+	}
+	if ( $switched ) {
+		restore_previous_locale(); }
+}
+$GLOBALS['shortcode_tags'] = $saved_shortcodes;
 echo "Feature integration: {$assertions} assertions passed\n";
