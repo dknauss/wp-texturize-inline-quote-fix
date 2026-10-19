@@ -7,6 +7,10 @@
 
 namespace DK\Texturize;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 /**
  * Report whether this request can use the validated formatter.
  *

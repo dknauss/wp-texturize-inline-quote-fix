@@ -3,7 +3,7 @@
  * Plugin Name: WP Texturize Inline Quote Fix
  * Plugin URI: https://github.com/dknauss/wp-texturize-inline-quote-fix
  * Description: Feature plugin for locale-aware quotes and apostrophes across inline formatting. Tracks core Trac #18549 and #43810.
- * Version: 0.2.0-dev
+ * Version: 0.2.0-beta.1
  * Requires at least: 6.4
  * Requires PHP: 7.4
  * Author: Dan Knauss

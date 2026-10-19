@@ -22,6 +22,7 @@ jobs:
           git diff --exit-code -- includes/formatter.php
       - run: composer lint
       - run: composer lint:compat
+      - run: python3 tests/package-contracts.py
   wordpress:
     runs-on: ubuntu-latest
     strategy:
@@ -55,13 +56,18 @@ jobs:
           wp config create --path=/tmp/quote-wordpress --dbname=wordpress --dbuser=root --dbpass='' --dbhost=127.0.0.1
           wp core install --path=/tmp/quote-wordpress --url=http://localhost --title=Quotes --admin_user=admin --admin_email=admin@example.test --skip-email > /dev/null
           wp language core install --path=/tmp/quote-wordpress de_DE fr_FR ru_RU ar ja
-          ln -s "$GITHUB_WORKSPACE" /tmp/quote-wordpress/wp-content/plugins/wp-texturize-inline-quote-fix
+          python3 tools/build-zip.py
+          wp plugin install --path=/tmp/quote-wordpress "$GITHUB_WORKSPACE/dist/wp-texturize-inline-quote-fix-0.2.0-beta.1.zip"
           mkdir -p /tmp/quote-wordpress/wp-content/mu-plugins
           cp tests/fixtures/late-registration.php /tmp/quote-wordpress/wp-content/mu-plugins/late-registration.php
           wp plugin activate --path=/tmp/quote-wordpress wp-texturize-inline-quote-fix
       - name: Single-site regressions and guards
         run: |
           wp eval-file --path=/tmp/quote-wordpress "$GITHUB_WORKSPACE/tests/integration.php"
+          wp eval-file --path=/tmp/quote-wordpress "$GITHUB_WORKSPACE/tests/release-contracts.php"
+          wp plugin activate --path=/tmp/quote-wordpress wp-texturize-inline-quote-fix/wp-texturize-inline-quote-fix-faithful.php
+          wp eval-file --path=/tmp/quote-wordpress "$GITHUB_WORKSPACE/tests/release-contracts.php"
+          wp plugin deactivate --path=/tmp/quote-wordpress wp-texturize-inline-quote-fix/wp-texturize-inline-quote-fix-faithful.php
           for mode in retired conflict disabled; do wp eval-file --path=/tmp/quote-wordpress "$GITHUB_WORKSPACE/tests/guards.php" "$mode"; done
       - name: Multisite regressions
         run: |
