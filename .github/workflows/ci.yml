@@ -56,6 +56,8 @@ jobs:
           wp core install --path=/tmp/quote-wordpress --url=http://localhost --title=Quotes --admin_user=admin --admin_email=admin@example.test --skip-email > /dev/null
           wp language core install --path=/tmp/quote-wordpress de_DE fr_FR ru_RU ar ja
           ln -s "$GITHUB_WORKSPACE" /tmp/quote-wordpress/wp-content/plugins/wp-texturize-inline-quote-fix
+          mkdir -p /tmp/quote-wordpress/wp-content/mu-plugins
+          cp tests/fixtures/late-registration.php /tmp/quote-wordpress/wp-content/mu-plugins/late-registration.php
           wp plugin activate --path=/tmp/quote-wordpress wp-texturize-inline-quote-fix
       - name: Single-site regressions and guards
         run: |

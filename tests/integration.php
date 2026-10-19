@@ -10,6 +10,9 @@ $check      = static function ( $expected, $actual, $label ) use ( &$assertions 
 	}
 };
 $check( 'active', DK\Texturize\status(), 'Supported request' );
+if ( file_exists( WPMU_PLUGIN_DIR . '/late-registration.php' ) ) {
+	$check( 'I<strong>&#8217;ve</strong>', apply_filters( 'the_post_thumbnail_caption', "I<strong>'ve</strong>" ), 'Late lifecycle registration' );
+}
 require_once WP_PLUGIN_DIR . '/wp-texturize-inline-quote-fix/wp-texturize-inline-quote-fix-faithful.php';
 $check( 'I<strong>&#8217;ve</strong>', apply_filters( 'the_title', "I<strong>'ve</strong>" ), 'Opening apostrophe' );
 $check( '<code><em>x</em>&#8216;s</code>', apply_filters( 'the_title', '<code><em>x</em>&#8216;s</code>' ), 'Opaque entity' );
