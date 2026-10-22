@@ -66,8 +66,9 @@ function costs, not a route-budget pass or zero-cost claim. The namespace wrappe
 uses fully qualified global calls to avoid losing PHP builtin fast paths.
 
 [Machine-readable medians, p95, catalog mappings and hashes](verification-data-2026-10-19.json)
-accompany this record. Raw samples, reference functions and lab harnesses are
-retained locally under `~/.codex/verification/typography-feature-2026-10-19/`.
+accompany this record. The lab harnesses, reference functions and core patch are
+committed under [`tools/verification/`](../tools/verification/README.md); raw samples
+are retained locally under `~/.codex/verification/typography-feature-2026-10-19/`.
 The frozen corpus is committed in `tests/fixtures/inline-corpus.json` for CI.
 No tagged release or production deployment was made.
 

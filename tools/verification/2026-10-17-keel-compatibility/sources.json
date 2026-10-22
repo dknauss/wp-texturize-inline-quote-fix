@@ -1,0 +1,56 @@
+[
+  {
+    "version": "6.4",
+    "archive_sha256": "91b2ea1843541e58baca15fa0545f098c8cc5496572e1fa08c0b5f2a630a59ed",
+    "formatting_sha256": "b1b89ab2d08b5a691e01007d56cd0637d08c9901ffcb7eafc9c907351d6be2f7",
+    "patch_applied": true
+  },
+  {
+    "version": "6.4.13",
+    "archive_sha256": "7128ce72cb4b060a05bb073b1395bb10400bb6c1526fd4b9313f1ef56b4b583a",
+    "formatting_sha256": "49a9cef6a352a4440b869e8f042899ae1d6fbe237b3d5ab938493eba1dd56248",
+    "patch_applied": true
+  },
+  {
+    "version": "6.5.13",
+    "archive_sha256": "6ddf1043354c43ae9cafe84834824f04ae72c57d06f4aaee6278fe9c34e2829c",
+    "formatting_sha256": "fc7a233a5883e16c6e243279a83f68d1a55cae6bbddd8ee8595e1d17a9f43775",
+    "patch_applied": true
+  },
+  {
+    "version": "6.6.10",
+    "archive_sha256": "6d5309d542175f7aebea6d7d933364bfa1c2db24c681ac9f55634297a4e8dd83",
+    "formatting_sha256": "894b42c1b6f7275d55cceb91a4e2db6283446d7194e4ba38f517bdd4e4f93558",
+    "patch_applied": true
+  },
+  {
+    "version": "6.7.10",
+    "archive_sha256": "a0bb667f07bcbfd8595d355a82d2a4cd488cbc7c2fe9b29c6476d97d985c6d44",
+    "formatting_sha256": "6608213460734b5c67af67b938a6c5f8cc3103254944471b32211fad93bcbf07",
+    "patch_applied": true
+  },
+  {
+    "version": "6.8.11",
+    "archive_sha256": "51917d013a574d20199869d7cd387840c7f790667dbc5588b4ec824152bc7abb",
+    "formatting_sha256": "543de9b67a84dd9c6782483eebfd1b62cfc263b2425d709b38163c7f9a93783e",
+    "patch_applied": true
+  },
+  {
+    "version": "6.9.10",
+    "archive_sha256": "4f18b9e25bd253b0c39009eafb651911e8de29465d6f62397369ff75a36fdb0e",
+    "formatting_sha256": "cb068819d324e0c15c22f1813fbd9ce58831bba89e5ba9a5399979b3dcd9ca68",
+    "patch_applied": true
+  },
+  {
+    "version": "7.0.7",
+    "archive_sha256": "e476db676a2688d62fcc2c2828f4888d45877972459dbf84086e92614d317c0e",
+    "formatting_sha256": "7c7d79a4f7456846051bab3d883a74f8bf9fede6175c88c547c4b98ad221747d",
+    "patch_applied": true
+  },
+  {
+    "version": "7.1.3",
+    "archive_sha256": "eb58a90ed55147f90f7bd55d0d3334960a69b7e8a4cc142c8ddfea8965218227",
+    "formatting_sha256": "350f6b32303915df970bb0e3ea360fcd54bb0b8a7ecc3d504c3d860ab9468d32",
+    "patch_applied": true
+  }
+]
