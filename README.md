@@ -86,6 +86,12 @@ WordPress integration script and each guard in a fresh WP-CLI request. CI covers
 single-site/multisite at the 7.4 floor and PHP 8.4. See the verification record for
 full corpus, locale switching and paired performance measurements.
 
+Changes follow the shared [QA and AI-testing process](https://github.com/dknauss/agent-skills/blob/trunk/docs/qa-process.md):
+risk tiers that set the minimum testing for each pull request, lab passes with a
+coverage matrix, a separate tester for sensitive changes, and the rules that keep
+agents from weakening or bypassing the checks that grade them. Name the tier in
+the pull request description.
+
 GPL-2.0-or-later. WordPress-derived formatter copyright WordPress contributors;
 opening-tag reconciliation credits irozum's core PR #12645. See [LICENSE](LICENSE).
 
